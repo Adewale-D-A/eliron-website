@@ -10,9 +10,9 @@ const linkVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-primary h-fit text-white border-none border-primary rounded-full w-fit p-3 px-14",
+          "bg-primary h-fit text-white border-none border-primary rounded-full w-fit p-3 px-8 lg:px-14",
         transparent:
-          "bg-transparent h-fit text-primary border border-primary rounded-full w-fit p-3 px-14",
+          "bg-transparent h-fit text-primary border border-primary rounded-full w-fit p-3  px-8 lg:px-14",
         urgent: "bg-red-500 border-0 text-white hover:bg-red-500/80",
         file: "bg-white text-gray-900 border border-[#E5E5E7] border-l-0 py-[14px]  md:py-[14px] ",
         unstyled: "text-gray-900 dark:text-dark-ash-900",

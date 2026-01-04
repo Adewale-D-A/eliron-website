@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "logo": "/partners/99edge.jpg",
+    "name": "99Edge"
+  },
+  {
+    "id": 3,
+    "logo": "/partners/99edge.jpg",
+    "name": "99Edge I"
+  },
+  {
+    "id": 4,
+    "logo": "/partners/99edge.jpg",
+    "name": "99Edge II"
+  },
+  {
+    "id": 5,
+    "logo": "/partners/99edge.jpg",
+    "name": "Dotme99Edge III"
+  },
+  {
+    "id": 7,
+    "logo": "/partners/99edge.jpg",
+    "name": "99Edge IV"
+  },
+  {
+    "id": 8,
+    "logo": "/partners/99edge.jpg",
+    "name": "99Edge V"
+  },
+  {
+    "id": 9,
+    "logo": "/partners/99edge.jpg",
+    "name": "99Edge VI"
+  }
+]

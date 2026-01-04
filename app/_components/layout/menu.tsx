@@ -10,9 +10,9 @@ export default function NavMenu() {
   const pathname = usePathname();
   return (
     <nav className="w-full backdrop-blur-2xl flex justify-center fixed top-0 left-0 z-50 transition-all shadow-sm shadow-primary overflow-x-clip nav-into">
-      <div className="flex w-full max-w-screen-xl justify-between items-center gap-4 px-3 py-2">
+      <div className="flex w-full max-w-screen-xl justify-between items-center gap-4 px-5 lg:px-10 py-2">
         <Logo />
-        <div className="w-full hidden text-sm lg:flex max-w-lg items-center justify-between font-semibold">
+        <div className="w-fit hidden text-sm lg:flex max-w-lg items-center lg:gap-16 font-semibold">
           {[
             {
               id: "1",

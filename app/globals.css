@@ -16,27 +16,55 @@
   }
 }
 
-/* body { */
-  /* background: var(--background);
-  color: var(--foreground); */
-  /* font-family:  var(--font-outfit) */
-/* } */
+/* infinite logo scroll */
+.logos {
+  margin-inline: auto;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
 
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
-} */
-
-/* @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-} */
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  @keyframes slide {
+  to {
+    left: -200px;
   }
-} */
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  animation: 30s slide infinite linear;
+}
+/* infinite logo scroll */
+
+/* Move up animation */
+.move-up {
+  /* @apply opacity-0; */
+  transition: all 0.5s ease-out;
+  animation: 1s slideUp 1 linear;
+}
+
+
+  @keyframes slideUp {
+  from {
+    opacity: 0;
+  transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+  transform: translateY(0px);
+  }
+}

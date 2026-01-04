@@ -12,12 +12,12 @@ export default function FooterMenu() {
             {
               id: 1,
               label: "Our Services",
-              url: "#",
+              url: "/services",
             },
             {
               id: 2,
               label: "Who we are",
-              url: "#",
+              url: "/about-us",
             },
             {
               id: 3,
@@ -27,7 +27,7 @@ export default function FooterMenu() {
             {
               id: 4,
               label: "Support",
-              url: "#",
+              url: "/contact-us",
             },
             {
               id: 5,
@@ -44,7 +44,7 @@ export default function FooterMenu() {
             </Link>
           ))}
         </div>
-        <div className="w-full border-t border-gray-600 flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-5 flex-wrap py-10">
+        <div className="w-full border-t border-gray-300 dark:border-gray-700 flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-5 flex-wrap py-10">
           <Link
             target="_blank"
             rel="noreferrer"
