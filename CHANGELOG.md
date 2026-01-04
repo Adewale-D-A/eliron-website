@@ -2,6 +2,7 @@
 
 > Feature: Home page banner UI completion, partners addition, other sections additions and footer adjustments
 > Feature: Tertiary pages setup
+> Addition: Meta assets updates and vercel URL live addition
 
 ##### 30.12.2025
 

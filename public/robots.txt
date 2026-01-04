@@ -1,0 +1,7 @@
+# https://www.robotstxt.org/robotstxt.html
+
+User-Agent: *
+Allow: /
+Disallow: /private/
+
+Sitemap: https://eliron-delta.vercel.app/sitemap.xml
