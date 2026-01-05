@@ -1,3 +1,7 @@
+##### 05.01.2025
+
+> Feature: Services page UI additions and updates
+
 ##### 04.01.2025
 
 > Feature: Home page banner UI completion, partners addition, other sections additions and footer adjustments

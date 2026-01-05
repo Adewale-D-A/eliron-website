@@ -16,9 +16,9 @@ export default function Home() {
         <OurPartners />
       </section>
 
-      <section className="w-full dark:bg-gray-900 py-24 flex flex-col gap-5 justify-center items-center ">
-        <div className="w-full flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-16">
-          <div className="w-full flex flex-col gap-4 max-w-[500px] text-center items-center">
+      <section className="w-full bg-gray-100 dark:bg-gray-900 py-24 flex flex-col gap-5 justify-center items-center ">
+        <div className="w-full flex max-w-7xl px-5 lg:px-0 flex-col justify-center items-center gap-16">
+          <div className="w-full flex flex-col gap-4 text-center items-center">
             <h4 className="text-4xl font-semibold leading-none lg:leading-tight">
               What we bring
             </h4>

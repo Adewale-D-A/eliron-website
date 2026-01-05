@@ -17,7 +17,7 @@ export default function FacilitiesCard({
   bgClassName: string;
 }) {
   return (
-    <div className=" w-full relative rounded-lg border border-gray-100 dark:border-gray-600 p-7 space-y-8 hover:border-secondary hover:cursor-pointer">
+    <div className=" w-full relative rounded-lg border border-gray-300 dark:border-gray-600 p-7 space-y-8 hover:scale-105 transition-all">
       <span className=" absolute right-5 top-0 text-9xl font-bold opacity-10">
         {id}
       </span>{" "}
