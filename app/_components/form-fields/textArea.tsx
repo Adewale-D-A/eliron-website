@@ -27,7 +27,7 @@ const TextAreaInput: React.FC<Props> = ({
   return (
     <div className="w-full">
       {label && (
-        <label htmlFor={id} className=" text-sm font-medium text-gray-900">
+        <label htmlFor={id} className=" text-sm font-medium">
           {label}
         </label>
       )}
