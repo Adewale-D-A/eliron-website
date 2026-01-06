@@ -1,5 +1,6 @@
 ##### 06.01.2025
 
+> Feature: Mobile menu addition
 > Feature: Approach page UI development
 > Fetaure: About us page UI development
 > Feature: Contact Us page UI and contact form integrations

@@ -2,6 +2,7 @@
 
 import { Fragment, useCallback } from "react";
 import { Dialog, Transition } from "@headlessui/react";
+import { X } from "lucide-react";
 
 const SuccessModal = ({
   openSuccessModal,
@@ -31,7 +32,7 @@ const SuccessModal = ({
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className="fixed inset-0 bg-black bg-opacity-25" />
+          <div className="fixed inset-0 backdrop-blur-2xl" />
         </Transition.Child>
 
         <div className="fixed inset-0 overflow-y-auto">
@@ -45,28 +46,15 @@ const SuccessModal = ({
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <Dialog.Panel className="w-full max-w-screen-sm transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+              <Dialog.Panel className="w-full max-w-screen-sm transform overflow-hidden rounded-2xl bg-white dark:bg-gray-800 p-6 text-left align-middle shadow-xl transition-all">
                 <div className="flex flex-col gap-6 justify-center items-center">
                   <div className="flex justify-end w-full">
                     <button
                       type="button"
-                      title="clode modal"
+                      title="close modal"
                       onClick={() => handleClose()}
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth={1.5}
-                        stroke="currentColor"
-                        className="w-6 h-6 text-red-500"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M6 18 18 6M6 6l12 12"
-                        />
-                      </svg>
+                      <X className="w-6 h-6 text-red-500" />
                     </button>
                   </div>
                   <div className=" w-full flex items-center flex-col gap-5">
@@ -84,13 +72,13 @@ const SuccessModal = ({
                     </svg>
 
                     <h4 className=" font-semibold text-3xl">Message Sent</h4>
-                    <p className=" text-sm text-gray-500">
+                    <p className=" text-sm">
                       Your message has been sent successfully
                     </p>
                     <button
                       type="button"
                       onClick={() => handleClose()}
-                      className=" text-primary-500 p-2 px-4 text-lg font-semibold rounded-md bg-white border-2 border-gray-300 hover:bg-primary-500 hover:text-white  transition-all"
+                      className=" text-primary-500 p-2 px-4 text-lg font-semibold rounded-md border-2 border-gray-300 hover:bg-primary hover:text-white transition-all"
                     >
                       {" "}
                       Back
