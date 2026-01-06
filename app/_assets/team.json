@@ -1,0 +1,38 @@
+[
+  {
+    "id": "9",
+    "name": "Ope Tokoya",
+    "position": "Founder & CEO",
+    "email": "",
+    "linkedin": "",
+    "twitter": "",
+    "image": "/teams/img_placeholder.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Anon",
+    "position": "Co-Founder & Head of Growth",
+    "email": "",
+    "linkedin": "",
+    "twitter": "",
+    "image": "/teams/img_placeholder.jpg"
+  },
+  {
+    "id": "1",
+    "name": "Anon",
+    "position": "Legal & Compliance",
+    "email": "",
+    "linkedin": "",
+    "twitter": "",
+    "image": "/teams/img_placeholder.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Anon",
+    "position": "VP Retail & Business",
+    "email": "",
+    "linkedin": "",
+    "twitter": "",
+    "image": "/teams/img_placeholder.jpg"
+  }
+]

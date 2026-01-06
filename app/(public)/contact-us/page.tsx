@@ -1,12 +1,38 @@
 import { Metadata } from "next";
 import metadataContent from "@/app/_assets/seo-meta-data.json";
+import ContactForm from "@/app/_components/contact-form";
+import CustomLink from "@/app/_components/button/link";
+import { Download } from "lucide-react";
 
 export const metadata: Metadata = metadataContent.contact;
 
 export default function Contact() {
   return (
     <div className=" flex flex-col items-center  pt-28">
-      <h1 className=" font-bol text-center text-5xl">Contact Us</h1>
+      <section className="w-full flex flex-col gap-5  justify-center items-center">
+        <div className="w-full pt-10 lg:pt-16 pb-20 flex max-w-7xl px-5 lg:px-0 flex-col justify-center items-center gap-8">
+          <h2 className="text-5xl lg:text-7xl text-center font-bold text-transparent bg-linear-45 from-secondary via-primary to-secondary dark:from-primary dark:via-[#eda6a9] dark:to-primary bg-clip-text">
+            Contact Us
+          </h2>
+          <p className=" text-center max-w-xl text-lg">
+            Eliron engages through retainers only. Please outline your program
+            needs and timeline.
+          </p>
+
+          <CustomLink
+            href="/assets/brochure.pdf"
+            className="flex items-center gap-2.5"
+            download
+          >
+            Download Brochure <Download className=" animate-bounce" />
+          </CustomLink>
+        </div>
+      </section>
+      <section className="w-full flex flex-col gap-5  justify-center items-center">
+        <div className="w-full pt-10 lg:pt-16 pb-20 flex max-w-7xl px-5 lg:px-0 flex-col justify-center items-center gap-8">
+          <ContactForm />
+        </div>
+      </section>
     </div>
   );
 }

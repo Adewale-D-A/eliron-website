@@ -31,6 +31,18 @@
       <td>tailwind-merge</td>
       <td>Merge tailwind classnames and resolve conflicts in classanmes while merging</td>
     </tr>
+    <tr>
+      <td>@emailjs/browser</td>
+      <td>Form entries email notifier</td>
+    </tr>
+    <tr>
+      <td>@headlessui/react</td>
+      <td>Modal popup</td>
+    </tr>
+    <tr>
+      <td>framer-motion</td>
+      <td>Components animation</td>
+    </tr>
   </table>
 
 step 1:
