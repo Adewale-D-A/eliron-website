@@ -15,8 +15,7 @@ export default function Contact() {
             Contact Us
           </h2>
           <p className=" text-center max-w-xl text-lg">
-            Eliron engages through retainers only. Please outline your program
-            needs and timeline.
+            Let’s explore how we can support your delivery challenges.
           </p>
 
           <CustomLink

@@ -13,17 +13,18 @@ export default function HeroBanner() {
       <div className="w-full  overflow-hidden absolute top-[0px] z-[-5] left-0  flex justify-center">
         <BlurAndGradient />
       </div>
-      <div className=" space-y-10">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold  leading-tight">
-          Execution Stability for Complex Programs Under Pressure
+      <div className=" space-y-10 text-center lg:text-left">
+        <h2 className="text-3xl md:text-4l lg:text-5xl font-bold  leading-tight">
+          Enterprise-Grade Consulting and Intellectual Property for High-Risk
+          Project Delivery
         </h2>
-        <p className="text-lg lg:text-2xl">
-          Independent advisory and delivery oversight for executives navigating
-          high-stakes initiatives.
+        <p className="text-lg lg:text-xl">
+          Practical frameworks, tools, and advisory support designed for
+          professionals and leaders accountable for complex, high-risk projects.
         </p>
         <CustomLink href="/approach" variant={"transparent"}>
-          <span className=" space-x-2.5 w-full flex items-center gap-2.5">
-            Explore Our Approach <ArrowRight />
+          <span className="text-xs lg:text-sm space-x-2.5 w-full flex items-center gap-2.5">
+            Get the Project Controls & Delivery Playbook <ArrowRight />
           </span>
         </CustomLink>
       </div>

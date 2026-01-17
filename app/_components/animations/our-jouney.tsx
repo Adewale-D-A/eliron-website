@@ -31,7 +31,7 @@ export default function OurApproachAnimation() {
           key={item?.key}
           className={cn(
             "w-full flex",
-            index % 2 === 0 ? "justify-start lg:pr-10" : "justify-end lg:pl-10"
+            index % 2 === 0 ? "justify-start lg:pr-10" : "justify-end lg:pl-10",
           )}
         >
           <div className="w-full lg:w-1/2">{item?.element}</div>

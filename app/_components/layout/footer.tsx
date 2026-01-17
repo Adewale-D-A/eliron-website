@@ -44,14 +44,17 @@ export default function FooterMenu() {
             </Link>
           ))}
         </div>
-        <div className="w-full border-t border-gray-300 dark:border-gray-700 flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-5 flex-wrap py-10">
+        <div className="w-full border-t border-gray-300 dark:border-gray-700 flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-5 flex-wrap py-10 px-5 text-center lg:text-center">
           <Link
             target="_blank"
             rel="noreferrer"
             href={"mailto:info@eliron.com"}
           >
-            © 2025 ELIRON. All rights reserved.
+            © 2025 Eliron Inc. All rights reserved.
           </Link>
+          <p>
+            Enterprise consulting | Delivery frameworks | Advisory solutions
+          </p>
           <div className=" flex items-center gap-4">
             {[
               {

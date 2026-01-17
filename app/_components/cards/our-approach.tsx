@@ -35,15 +35,15 @@ export function OurApproachCard({
             damping: 20,
             duration: 2000,
           }}
-          className=" w-full shadow-lg dark:shadow-gray-700 rounded-3xl lg:rounded-full flex items-center gap-4 p-4"
+          className=" w-full shadow-lg dark:shadow-gray-700 rounded-3xl  flex flex-col items-start gap-4 p-4"
         >
-          <div className=" rounded-full p-4 bg-secondary dark:bg-primary w-fit text-white">
-            {icon}
+          <div className=" flex items-center space-x-4">
+            <div className=" rounded-full p-3 bg-secondary dark:bg-primary w-fit text-white">
+              {icon}
+            </div>
+            <h6 className=" font-bold text-2xl">{title}</h6>
           </div>
-          <div>
-            <h6 className=" font-bold text-lg">{title}</h6>
-            <p>{description}</p>
-          </div>
+          <p className=" text-lg px-2">{description}</p>
         </motion.div>
       ) : (
         <div className=" w-full h-28"></div>
@@ -54,9 +54,9 @@ export function OurApproachCard({
 export function OurApproachCardOne() {
   return (
     <OurApproachCard
-      icon={<Pyramid className="size-10 lg:size-14" />}
-      title="Stabilize"
-      description="Immediate clarity, cadence, and control."
+      icon={<Pyramid className="size-6 lg:size-8" />}
+      title="Our Purpose"
+      description="Eliron exists to elevate project delivery performance in environments where ambiguity and risk are norms, not exceptions. We help organisations and senior delivery professionals apply institutional quality frameworks that reduce uncertainty, boost predictability, and align execution to strategic intent."
       position={0}
     />
   );
@@ -65,9 +65,9 @@ export function OurApproachCardOne() {
 export function OurApproachCardTwo() {
   return (
     <OurApproachCard
-      icon={<Joystick className="size-10 lg:size-14" />}
-      title="Control"
-      description="Weekly operating rhythm, reporting, and escalation."
+      icon={<Joystick className="size-6 lg:size-8" />}
+      title="Our Approach"
+      description="Eliron’s methodology is built on proven delivery science and real-world experience. We focus on practicality over theory, offering tools and playbooks that support decision-making, provide clarity in complexity, and standardise excellence across teams."
       position={1}
     />
   );
@@ -75,9 +75,9 @@ export function OurApproachCardTwo() {
 export function OurApproachCardThree() {
   return (
     <OurApproachCard
-      icon={<ChartNetwork className="size-10 lg:size-14" />}
-      title="Proof of Concept"
-      description="Pilots with clinics, labs, and diagnostic centers validated our core automation and data-capture features."
+      icon={<ChartNetwork className="size-6 lg:size-8" />}
+      title="Who We Are Not"
+      description="We are not a personal brand, career-coaching service, or job search platform. Eliron is institutional, enterprise-safe, and tailored for organisations and professionals who lead momentous projects and programmes."
       position={0}
     />
   );
@@ -86,9 +86,9 @@ export function OurApproachCardThree() {
 export function OurApproachCardFour() {
   return (
     <OurApproachCard
-      icon={<RefreshCcw className="size-10 lg:size-14" />}
-      title="Transition"
-      description="Smooth exit, leaving systems sustainable."
+      icon={<RefreshCcw className="size-6 lg:size-8" />}
+      title="Our Commitment"
+      description="We prioritise rigor, repeatability, and results. Every product and advisory engagement is designed to support sustainable performance improvements at scale."
       position={1}
     />
   );

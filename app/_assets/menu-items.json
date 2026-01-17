@@ -5,11 +5,6 @@
     "url": "/services"
   },
   {
-    "id": "2",
-    "label": "Approach",
-    "url": "/approach"
-  },
-  {
     "id": "3",
     "label": "About Us",
     "url": "/about-us"

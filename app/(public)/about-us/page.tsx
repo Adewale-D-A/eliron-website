@@ -1,16 +1,18 @@
 import { Metadata } from "next";
 import metadataContent from "@/app/_assets/seo-meta-data.json";
-import Team from "@/app/_components/cards/team";
-import leadership from "@/app/_assets/team.json";
 import Image from "next/image";
 import principles from "@/app/_assets/principles.json";
+import OurApproachAnimation from "@/app/_components/animations/our-jouney";
+// import Team from "@/app/_components/cards/team";
+// import leadership from "@/app/_assets/team.json";
+
 export const metadata: Metadata = metadataContent.about;
 
 export default function AboutUs() {
   return (
-    <div className=" flex flex-col items-center  pt-28">
-      <section className="w-full flex flex-col gap-5  justify-center items-center">
-        <div className="w-full pt-10 lg:pt-16 pb-20 flex max-w-7xl px-5 lg:px-0 flex-col justify-center items-center gap-8">
+    <div className=" flex flex-col items-center  pt-28 ">
+      <section className="w-full flex flex-col gap-5  justify-center items-center overflow-hidden">
+        <div className="w-full pt-10 lg:pt-16 pb-20 flex max-w-7xl px-5 lg:px-0 flex-col justify-center items-center gap-16">
           <div className=" space-y-8">
             <h2 className="text-5xl lg:text-7xl text-center font-bold text-transparent bg-linear-45 from-secondary via-primary to-secondary dark:from-primary dark:via-[#eda6a9] dark:to-primary bg-clip-text">
               About Us
@@ -20,10 +22,11 @@ export default function AboutUs() {
               managing complex programs under pressure.
             </p>
           </div>
+          <OurApproachAnimation />
         </div>
       </section>
 
-      <section className="w-full pt-24 flex flex-col gap-5 justify-center items-center bg-gray-100 dark:bg-gray-700 py-24">
+      {/* <section className="w-full pt-24 flex flex-col gap-5 justify-center items-center bg-gray-100 dark:bg-gray-700 py-24">
         <div className="w-full flex max-w-7xl flex-col justify-center items-center gap-5 px-5 lg:px-10 space-y-10">
           <h4 className=" text-2xl lg:text-4xl font-bold text-transparent bg-linear-45 from-secondary via-primary to-secondary dark:from-primary dark:via-[#eda6a9] dark:to-primary bg-clip-text">
             Principles
@@ -53,8 +56,8 @@ export default function AboutUs() {
             </div>
           </div>
         </div>
-      </section>
-      <section className="w-full pt-24 flex flex-col gap-5 justify-center items-center">
+      </section> */}
+      {/* <section className="w-full pt-24 flex flex-col gap-5 justify-center items-center">
         <div className="w-full flex max-w-7xl flex-col justify-center items-center gap-5 px-5 lg:px-10">
           <h4 className=" text-2xl lg:text-4xl font-bold text-transparent bg-linear-45 from-secondary via-primary to-secondary dark:from-primary dark:via-[#eda6a9] dark:to-primary bg-clip-text">
             Meet the team
@@ -77,7 +80,7 @@ export default function AboutUs() {
             )}
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

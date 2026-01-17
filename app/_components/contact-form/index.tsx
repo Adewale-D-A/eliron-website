@@ -17,9 +17,11 @@ export default function ContactForm({ closeModal }: { closeModal?: Function }) {
 
   const [fullname, setFullname] = useState("");
   const [company, setCompany] = useState("");
+  const [linkedIn, setLinkedIn] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [scheduleDate, setScheduleDate] = useState("");
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
@@ -43,7 +45,7 @@ export default function ContactForm({ closeModal }: { closeModal?: Function }) {
           service_id,
           template_id,
           form.current || "",
-          public_key
+          public_key,
         );
         setOpenSuccess(true);
         setFullname("");
@@ -51,13 +53,15 @@ export default function ContactForm({ closeModal }: { closeModal?: Function }) {
         setPhone("");
         setEmail("");
         setMessage("");
+        setLinkedIn("");
+        setScheduleDate("");
       } catch (error) {
         setErrorMessage("please try again later");
       } finally {
         setIsSubmitting(false);
       }
     },
-    [service_id, template_id, public_key, form]
+    [service_id, template_id, public_key, form],
   );
 
   return (
@@ -84,6 +88,15 @@ export default function ContactForm({ closeModal }: { closeModal?: Function }) {
               setState: setCompany,
             },
             {
+              id: "linkedin",
+              label: "Enterprise LnkedIn (optional)",
+              placeholder: "https://linkin...",
+              type: "text",
+              isRequired: false,
+              state: linkedIn,
+              setState: setLinkedIn,
+            },
+            {
               id: "phone_number",
               label: "Phone",
               placeholder: "000000000000000",
@@ -94,12 +107,21 @@ export default function ContactForm({ closeModal }: { closeModal?: Function }) {
             },
             {
               id: "email",
-              label: "email",
+              label: "Eail",
               placeholder: "example@example.com",
               type: "email",
               isRequired: true,
               state: email,
               setState: setEmail,
+            },
+            {
+              id: "schedule_date",
+              label: "Schedule Date",
+              placeholder: "",
+              type: "date",
+              isRequired: true,
+              state: scheduleDate,
+              setState: setScheduleDate,
             },
           ].map((item) => (
             <TextInput

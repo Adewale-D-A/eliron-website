@@ -18,7 +18,7 @@ export default function ServicesHeroCards({
     <div
       className={cn(
         "relative h-full min-h-96 rounded-2xl overflow-hidden bg-right bg-no-repeat bg-cover bg-secondary/60 dark:bg-black/50 bg-blend-overlay text-white",
-        bgClassName
+        bgClassName,
       )}
     >
       {/* <Image
@@ -33,14 +33,14 @@ export default function ServicesHeroCards({
         <div>
           <div
             className={cn(
-              " rounded-full w-fit p-3 bg-primary/30 dark:bg-black/30"
+              " rounded-full w-fit p-3 bg-primary/30 dark:bg-black/30",
             )}
           >
             {icon}
           </div>
-          <h6 className=" font-semibold text-lg mt-3">{title}</h6>
+          <h6 className=" font-semibold text-xl mt-3">{title}</h6>
         </div>
-        <p className=" text-gray_text-200">{description}</p>
+        <p className=" text-sm lg:text-lg">{description}</p>
       </div>
     </div>
   );

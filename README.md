@@ -51,3 +51,4 @@ step 2:
 run **npm run dev** (start application on port:3000)
 
 [FRONTEND LIVE URL](https://eliron-delta.vercel.app/)
+[CONTENT DOCUMENTS](https://docs.google.com/document/d/1-RUitBns_0y7W3o3Dmd1KWv6Issn0lATOLIvjHv-AeM/edit?usp=sharing)

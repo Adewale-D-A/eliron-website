@@ -1,3 +1,7 @@
+##### 17.01.2025
+
+> Feature: Contents updates
+
 ##### 06.01.2025
 
 > Feature: Mobile menu addition
