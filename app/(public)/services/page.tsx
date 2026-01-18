@@ -1,7 +1,15 @@
 import { Metadata } from "next";
 import metadataContent from "@/app/_assets/seo-meta-data.json";
 import ServicesHeroCards from "@/app/_components/cards/services-hero";
-import { Book, Brain, BriefcaseBusiness, Pyramid } from "lucide-react";
+import {
+  Book,
+  Brain,
+  BriefcaseBusiness,
+  Building,
+  Handshake,
+  Pyramid,
+  Sparkles,
+} from "lucide-react";
 import ServiceOfferingsCard from "@/app/_components/cards/services-offerings";
 
 export const metadata: Metadata = metadataContent.services;
@@ -16,16 +24,17 @@ export default function Services() {
           </h2>
         </div>
       </section>
-      <section className=" w-full mt-10 flex flex-col items-center">
+      <section className=" w-full mt-10 flex flex-col items-center bg-primary/10 dark:bg-gray-700 lg:px-10 bg-right bg-no-repeat bg-cover bg-[url('/assets/pattern.png')] py-16">
         <div className="w-full max-w-7xl flex flex-col items-center space-y-5 px-5">
-          <h4 className=" p-3 px-7 bg-secondary text-white text-lg w-fit text-center rounded-lg font-bold">
+          <h4 className=" p-3 px-7 capitalize text-2xl w-fit text-center rounded-lg font-bold text-transparent bg-linear-45 from-secondary via-primary to-secondary dark:from-primary dark:via-[#eda6a9] dark:to-primary bg-clip-text">
             Project Controls & Delivery Playbook
           </h4>
-          <div className=" w-full grid grid-cols-1 lg:grid-cols-3 gap-5">
+          <div className=" w-full grid grid-cols-1 lg:grid-cols-3 gap-5 ">
             {/* Service 1 */}
             {[
               {
-                icon: <Book />,
+                id: "1",
+                icon: <Building />,
                 pricing: { base_price: "$499", duration: "one-time access" },
                 title: "Enterprise-Grade Framework",
                 description:
@@ -53,7 +62,8 @@ export default function Services() {
                 ctaTitle: "Access Now",
               },
               {
-                icon: <Book />,
+                id: "2",
+                icon: <Sparkles />,
                 pricing: { base_price: "$??", duration: "?? access" },
                 title: "Advanced Editions & Expansions",
                 description:
@@ -72,7 +82,8 @@ export default function Services() {
                 ctaTitle: "Contact sales for options",
               },
               {
-                icon: <Book />,
+                id: "3",
+                icon: <Handshake />,
                 pricing: { base_price: "$??", duration: "?? access" },
                 title: "Team & Firm Licensing",
                 description:
@@ -91,6 +102,7 @@ export default function Services() {
                 ctaTitle: "Request pricing",
               },
               {
+                id: "4",
                 icon: <Book />,
                 pricing: { base_price: "$??", duration: "?? access" },
                 title: "High-Value Advisory & Consulting Retainers",
@@ -110,7 +122,7 @@ export default function Services() {
                 ctaTitle: "Talk to an Advisor",
               },
             ].map((ite, idx) => (
-              <ServiceOfferingsCard key={idx} {...ite} />
+              <ServiceOfferingsCard key={ite.id} {...ite} />
             ))}
           </div>
         </div>

@@ -22,7 +22,7 @@ export default function HeroBanner() {
           Practical frameworks, tools, and advisory support designed for
           professionals and leaders accountable for complex, high-risk projects.
         </p>
-        <CustomLink href="/approach" variant={"transparent"}>
+        <CustomLink href="/services" variant={"transparent"}>
           <span className="text-xs lg:text-sm space-x-2.5 w-full flex items-center gap-2.5">
             Get the Project Controls & Delivery Playbook <ArrowRight />
           </span>

@@ -5,7 +5,6 @@ import OurPartners from "../_components/page-comp/partners";
 import { ArrowRight, HandFist, Triangle } from "lucide-react";
 import PrepositionCard from "../_components/cards/preposition";
 import CustomLink from "@/app/_components/button/link";
-import { Download } from "lucide-react";
 
 export const metadata: Metadata = metadataContent.home;
 
@@ -76,15 +75,9 @@ export default function Home() {
             ensuring stability when execution falters.
           </h2>
           <div className=" flex items-center gap-7 flex-col lg:flex-row">
+            <CustomLink href="/services">Access the Playbook</CustomLink>
             <CustomLink
-              href="/assets/brochure.pdf"
-              className="flex items-center gap-2.5"
-              download
-            >
-              Access the Playbook <Download className=" animate-bounce" />
-            </CustomLink>
-            <CustomLink
-              href="/approach"
+              href={`/contact-us?tier_id=${"4"}`}
               variant={"transparent"}
               className="backdrop-blur-sm "
             >

@@ -1,14 +1,22 @@
 "use client";
 
-import React, { useCallback, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import TextInput from "../form-fields/input";
 import TextAreaInput from "../form-fields/textArea";
 import SuccessModal from "./successMessage";
 import emailjs from "@emailjs/browser";
 import { MailWarning } from "lucide-react";
 import { Button } from "../button";
+import SelectField from "../form-fields/select";
+import contactReasons from "@/app/_assets/contact-reasons.json";
 
-export default function ContactForm({ closeModal }: { closeModal?: Function }) {
+export default function ContactForm({
+  closeModal,
+  reasonId,
+}: {
+  closeModal?: Function;
+  reasonId?: string;
+}) {
   const form = useRef(null) as any;
 
   const service_id = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "";
@@ -20,6 +28,7 @@ export default function ContactForm({ closeModal }: { closeModal?: Function }) {
   const [linkedIn, setLinkedIn] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
+  const [option, setOption] = useState("Others");
   const [message, setMessage] = useState("");
   const [scheduleDate, setScheduleDate] = useState("");
 
@@ -27,6 +36,15 @@ export default function ContactForm({ closeModal }: { closeModal?: Function }) {
   const [errorMessage, setErrorMessage] = useState("");
 
   const [openSuccess, setOpenSuccess] = useState(false);
+
+  // Pre-populate  message field based on option selected
+  useEffect(() => {
+    const found = contactReasons.find((it) => it.id === reasonId);
+    if (found) {
+      setOption(found.value);
+      setMessage(found.message_template || "");
+    }
+  }, [reasonId]);
 
   const submit = useCallback(
     async (e: React.SyntheticEvent) => {
@@ -55,6 +73,7 @@ export default function ContactForm({ closeModal }: { closeModal?: Function }) {
         setMessage("");
         setLinkedIn("");
         setScheduleDate("");
+        setOption("Others");
       } catch (error) {
         setErrorMessage("please try again later");
       } finally {
@@ -64,6 +83,13 @@ export default function ContactForm({ closeModal }: { closeModal?: Function }) {
     [service_id, template_id, public_key, form],
   );
 
+  const handleReasonSelection = (e: string) => {
+    setOption(e);
+    const found = contactReasons.find((it) => it.value === e);
+    if (found) {
+      setMessage(found.message_template || "");
+    }
+  };
   return (
     <>
       <form ref={form} className=" flex flex-col gap-5" onSubmit={submit}>
@@ -89,7 +115,7 @@ export default function ContactForm({ closeModal }: { closeModal?: Function }) {
             },
             {
               id: "linkedin",
-              label: "Enterprise LnkedIn (optional)",
+              label: "Enterprise LinkedIn (optional)",
               placeholder: "https://linkin...",
               type: "text",
               isRequired: false,
@@ -107,7 +133,7 @@ export default function ContactForm({ closeModal }: { closeModal?: Function }) {
             },
             {
               id: "email",
-              label: "Eail",
+              label: "Email",
               placeholder: "example@example.com",
               type: "email",
               isRequired: true,
@@ -116,7 +142,7 @@ export default function ContactForm({ closeModal }: { closeModal?: Function }) {
             },
             {
               id: "schedule_date",
-              label: "Schedule Date",
+              label: "Schedule A Date",
               placeholder: "",
               type: "date",
               isRequired: true,
@@ -137,14 +163,27 @@ export default function ContactForm({ closeModal }: { closeModal?: Function }) {
             />
           ))}
         </div>
-        <div className="w-full">
+        <div className="w-full space-y-5">
+          <SelectField
+            value={option}
+            onChange={handleReasonSelection}
+            label="Contact Reason"
+            id="selected_reason"
+            isRequired={true}
+          >
+            {contactReasons.map((it) => (
+              <option key={it.id} value={it.value}>
+                {it.label}
+              </option>
+            ))}
+          </SelectField>
           <TextAreaInput
             value={message}
             name="message"
             setValue={setMessage}
             isRequired={true}
             id="message"
-            label="How can we help?"
+            label="Message"
             placeholder="Type message here"
           />
         </div>

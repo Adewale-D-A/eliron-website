@@ -6,7 +6,12 @@ import { Download } from "lucide-react";
 
 export const metadata: Metadata = metadataContent.contact;
 
-export default function Contact() {
+export default async function Contact({
+  searchParams,
+}: {
+  searchParams: Promise<{ [key: string]: string | undefined }>;
+}) {
+  const params = await searchParams;
   return (
     <div className=" flex flex-col items-center  pt-28">
       <section className="w-full flex flex-col gap-5  justify-center items-center">
@@ -15,7 +20,7 @@ export default function Contact() {
             Contact Us
           </h2>
           <p className=" text-center max-w-xl text-lg">
-            Let’s explore how we can support your delivery challenges.
+            Let&apos;s explore how we can support your delivery challenges.
           </p>
 
           <CustomLink
@@ -29,7 +34,7 @@ export default function Contact() {
       </section>
       <section className="w-full flex flex-col gap-5  justify-center items-center">
         <div className="w-full pt-10 lg:pt-16 pb-20 flex max-w-7xl px-5 lg:px-0 flex-col justify-center items-center gap-8">
-          <ContactForm />
+          <ContactForm reasonId={params?.tier_id} />
         </div>
       </section>
     </div>

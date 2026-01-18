@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "value": "Enterprise-Grade Framework",
+    "label": "Playbook Tier - Enterprise-Grade Framework",
+    "message_template": "Enquiries about Enterprise-Grade Framework"
+  },
+  {
+    "id": "2",
+    "value": "Advanced Editions & Expansions",
+    "label": "Playbook Tier - Advanced Editions & Expansions",
+    "message_template": "Contacting sales about Advanced Editions & Expansions options"
+  },
+  {
+    "id": "3",
+    "value": "Team & Firm Licensing",
+    "label": "Playbook Tier - Team & Firm Licensing",
+    "message_template": "Requesting price for Team & Firm Licensing"
+  },
+  {
+    "id": "4",
+    "value": "High-Value Advisory & Consulting Retainers",
+    "label": "Playbook Tier - High-Value Advisory & Consulting Retainers",
+    "message_template": "I want to talk to an advisor about High-Value Advisory & Consulting Retainers"
+  },
+  {
+    "id": "5",
+    "value": "Others",
+    "label": "Other reasons",
+    "message_template": ""
+  }
+]

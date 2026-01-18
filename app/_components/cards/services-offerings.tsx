@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 import CustomLink from "../button/link";
 
 export default function ServiceOfferingsCard({
+  id,
   icon,
   pricing,
   title,
@@ -10,6 +11,7 @@ export default function ServiceOfferingsCard({
   items,
   ctaTitle,
 }: {
+  id: string;
   icon: ReactNode;
   pricing: { base_price: string; duration: string };
   title: string;
@@ -18,7 +20,7 @@ export default function ServiceOfferingsCard({
   ctaTitle: string;
 }) {
   return (
-    <div className=" w-full rounded-lg border border-gray-300 dark:border-gray-600 p-7 space-y-8 hover:scale-105 transition-all flex flex-col justify-between">
+    <div className=" w-full rounded-lg border backdrop-blur-sm border-gray-300 dark:border-gray-600 p-7 space-y-8 hover:scale-105 transition-all flex flex-col justify-between">
       <div className=" space-y-8">
         <div className=" flex justify-between items-center gap-3">
           <div
@@ -51,7 +53,7 @@ export default function ServiceOfferingsCard({
       </div>
       <div className=" flex justify-end">
         <CustomLink
-          href="/contact-us"
+          href={`/contact-us?tier_id=${id}`}
           variant={"transparent"}
           className="backdrop-blur-sm "
         >

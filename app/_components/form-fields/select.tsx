@@ -5,7 +5,7 @@ import React, { ChangeEvent } from "react";
 interface Props {
   children: React.ReactNode;
   value: string;
-  setValue: Function;
+  onChange: (e: string) => void;
   label: string;
   isRequired?: boolean;
   id: string;
@@ -14,14 +14,11 @@ interface Props {
 const SelectField: React.FC<Props> = ({
   children,
   value,
-  setValue,
+  onChange,
   label,
   isRequired = false,
   id,
 }) => {
-  const handleInput = (e: ChangeEvent<HTMLInputElement>) => {
-    setValue(e.target.value);
-  };
   return (
     <div className="w-full">
       <label htmlFor={id} className="text-sm font-medium">
@@ -29,11 +26,12 @@ const SelectField: React.FC<Props> = ({
       </label>
       <select
         id={id}
+        name={id}
         title={label}
         value={value}
         required={isRequired}
-        onChange={(e) => setValue(e.target.value)}
-        className="w-full p-4 mt-3 rounded-[4px] border border-gray-300 bg-gray-200/15 sm:text-md focus:ring-[#17594F] focus:border-[#17594F]"
+        onChange={(e) => onChange(e.target.value)}
+        className="w-full p-4 rounded-[4px] mt-3 border border-gray-300 bg-gray-200/15 focus:ring-[#17594F] focus:border-[#17594F]"
       >
         {children}
       </select>

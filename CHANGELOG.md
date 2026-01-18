@@ -1,3 +1,7 @@
+##### 18.01.2025
+
+> Updates: Srvices and contact us page UI and flow adjustments
+
 ##### 17.01.2025
 
 > Feature: Contents updates
