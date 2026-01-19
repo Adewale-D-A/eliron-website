@@ -1,5 +1,6 @@
 ##### 19.01.2025
 
+> Updates: Meta url update
 > Updates: Google indexing meta-tag addition
 > Updates: Pricing on service offerings removal
 

@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://eliron-delta.vercel.app/</loc>
-		<lastmod>2024-02-08T20:54:12+0000</lastmod>
+		<loc>https://www.elironco.com/</loc>
+		<lastmod>2026-01-08T20:54:12+0000</lastmod>
 	</url>
 	<url>
-		<loc>https://eliron-delta.vercel.app/about-us</loc>
-		<lastmod>2024-02-08T20:54:12+0000</lastmod>
+		<loc>https://www.elironco.com/about-us</loc>
+		<lastmod>2026-01-08T20:54:12+0000</lastmod>
 	</url>
 	<url>
-		<loc>https://eliron-delta.vercel.app/services</loc>
-		<lastmod>2024-02-08T20:54:12+0000</lastmod>
+		<loc>https://www.elironco.com/services</loc>
+		<lastmod>2026-01-08T20:54:12+0000</lastmod>
 	</url>
 	<url>
-		<loc>https://eliron-delta.vercel.app/approach</loc>
-		<lastmod>2024-02-08T20:54:12+0000</lastmod>
-	</url>
-	<url>
-		<loc>https://eliron-delta.vercel.app/contact-us</loc>
-		<lastmod>2024-02-08T20:54:12+0000</lastmod>
+		<loc>https://www.elironco.com/contact-us</loc>
+		<lastmod>2026-01-08T20:54:12+0000</lastmod>
 	</url>
 </urlset>

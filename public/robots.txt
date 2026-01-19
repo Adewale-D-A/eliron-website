@@ -4,4 +4,4 @@ User-Agent: *
 Allow: /
 Disallow: /private/
 
-Sitemap: https://eliron-delta.vercel.app/sitemap.xml
+Sitemap: https://www.elironco.com/sitemap.xml

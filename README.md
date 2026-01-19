@@ -50,5 +50,6 @@ run **npm install** (to install all the dependencies)
 step 2:
 run **npm run dev** (start application on port:3000)
 
-[FRONTEND LIVE URL](https://eliron-delta.vercel.app/)
+[STAGING ENVIRONMENT LIVE URL](https://www.elironco.com/)
+[FRONTEND LIVE URL](https://www.elironco.com/)
 [CONTENT DOCUMENTS](https://docs.google.com/document/d/1-RUitBns_0y7W3o3Dmd1KWv6Issn0lATOLIvjHv-AeM/edit?usp=sharing)
