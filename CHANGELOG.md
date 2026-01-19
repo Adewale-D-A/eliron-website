@@ -1,3 +1,8 @@
+##### 19.01.2025
+
+> Updates: Google indexing meta-tag addition
+> Updates: Pricing on service offerings removal
+
 ##### 18.01.2025
 
 > Updates: Srvices and contact us page UI and flow adjustments

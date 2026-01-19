@@ -29,10 +29,10 @@ export default function ServiceOfferingsCard({
             {icon}
           </div>
 
-          <h2 className=" font-bold text-4xl">
+          {/* <h2 className=" font-bold text-4xl">
             {pricing.base_price}
             <span className=" text-xs text-gray-500">/ {pricing.duration}</span>
-          </h2>
+          </h2> */}
         </div>
         <div className=" space-y-4 ">
           <h4 className=" font-bold text-lg">{title}</h4>
