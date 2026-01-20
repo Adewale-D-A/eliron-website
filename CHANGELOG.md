@@ -1,3 +1,7 @@
+##### 20.01.2025
+
+> Updates: Company's email addition
+
 ##### 19.01.2025
 
 > Updates: Meta url update

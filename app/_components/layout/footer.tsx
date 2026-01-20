@@ -48,7 +48,7 @@ export default function FooterMenu() {
           <Link
             target="_blank"
             rel="noreferrer"
-            href={"mailto:info@eliron.com"}
+            href={"mailto:hello@elironco.com"}
           >
             © 2025 Eliron Inc. All rights reserved.
           </Link>
@@ -61,26 +61,26 @@ export default function FooterMenu() {
                 id: 1,
                 icon: <Linkedin className="w-4 h-4" />,
                 title: "LinkedIn",
-                url: "https://www.linkedin.com/company/eliron",
+                url: "#",
               },
               {
                 id: 2,
                 icon: <Twitter className="w-4 h-4" />,
                 title: "X",
-                url: "https://x.com/eliron",
+                url: "#",
               },
               {
                 id: 3,
                 icon: <Instagram className="w-4 h-4" />,
                 title: "Instagram",
-                url: "https://www.instagram.com/eliron",
+                url: "#",
               },
             ].map(({ id, icon, url, title }) => (
               <Link
                 key={id}
                 href={url}
-                target="_blank"
-                rel="noreferrer"
+                // target="_blank"
+                // rel="noreferrer"
                 title={title}
                 className=" p-2 rounded-full hover:scale-125 transition-all text-primary"
               >

@@ -3,6 +3,7 @@ import metadataContent from "@/app/_assets/seo-meta-data.json";
 import ContactForm from "@/app/_components/contact-form";
 import CustomLink from "@/app/_components/button/link";
 import { Download } from "lucide-react";
+import Link from "next/link";
 
 export const metadata: Metadata = metadataContent.contact;
 
@@ -22,7 +23,16 @@ export default async function Contact({
           <p className=" text-center max-w-xl text-lg">
             Let&apos;s explore how we can support your delivery challenges.
           </p>
-
+          <Link
+            target="_blank"
+            rel="noreferrer"
+            href={"mailto:hello@elironco.com"}
+          >
+            Send us an email via{" "}
+            <span className=" font-bold underline text-primary">
+              hello@elironco.com
+            </span>
+          </Link>
           <CustomLink
             href="/assets/brochure.pdf"
             className="flex items-center gap-2.5"
