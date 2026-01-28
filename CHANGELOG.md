@@ -1,3 +1,7 @@
+##### 27.01.2025
+
+> Feature: Canonical meta tag addition
+
 ##### 20.01.2025
 
 > Updates: Company's email addition

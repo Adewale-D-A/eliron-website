@@ -8,7 +8,10 @@
       "delivery oversight",
       "execution stability",
       "Eliron consulting"
-    ]
+    ],
+    "alternates": {
+      "canonical": "./"
+    }
   },
   "services": {
     "title": "Eliron Services | Advisory & Program Stabilization",
@@ -19,7 +22,10 @@
       "executive support",
       "escalation protocols",
       "transition oversight"
-    ]
+    ],
+    "alternates": {
+      "canonical": "./"
+    }
   },
   "approach": {
     "title": "Eliron Approach | Calm, Executive Oversight",
@@ -30,7 +36,10 @@
       "retainer consulting",
       "executive oversight",
       "Eliron approach"
-    ]
+    ],
+    "alternates": {
+      "canonical": "./"
+    }
   },
   "about": {
     "title": "About Eliron | Independent Advisory for Executives",
@@ -41,7 +50,10 @@
       "executive consulting",
       "business sustainability",
       "program oversight"
-    ]
+    ],
+    "alternates": {
+      "canonical": "./"
+    }
   },
   "contact": {
     "title": "Contact Eliron | Advisory Engagements",
@@ -52,6 +64,9 @@
       "executive advisory contact",
       "program consulting",
       "Eliron engagements"
-    ]
+    ],
+    "alternates": {
+      "canonical": "./"
+    }
   }
 }
