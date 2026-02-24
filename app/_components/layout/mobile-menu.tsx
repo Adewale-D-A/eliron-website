@@ -29,7 +29,7 @@ export default function MobileMenu({
         animate={{ x: 0 }}
         exit={{ x: 100 }}
         transition={{ duration: 0.2 }}
-        className=" fixed top-0 right-0 z-50 backdrop-blur-2xl h-screen w-full flex"
+        className=" fixed top-0 right-0 z-50 backdrop-blur-2xl h-screen bg-navy/45 backdrop-blur-2xl  w-full flex"
       >
         <div className="h-screen p-4 w-full flex flex-col gap-16 px-10">
           <div className="flex justify-between gap-5">
@@ -48,8 +48,8 @@ export default function MobileMenu({
                 href={item?.url}
                 key={item?.id}
                 className={cn(
-                  " hover:text-primary transition-all",
-                  pathname.includes(item?.url) && "text-primary"
+                  " hover:text-white text-gray-300 transition-all",
+                  // pathname.includes(item?.url) && "text-primary",
                 )}
               >
                 {item?.label}

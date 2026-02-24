@@ -1,12 +1,22 @@
 [
   {
     "id": "1",
-    "label": "Services",
-    "url": "/services"
+    "label": "Why AI",
+    "url": "/#problem"
+  },
+  {
+    "id": "2",
+    "label": "Playbook",
+    "url": "/#playbook"
   },
   {
     "id": "3",
-    "label": "About Us",
-    "url": "/about-us"
+    "label": "Services",
+    "url": "/#services"
+  },
+  {
+    "id": "4",
+    "label": "FAQ",
+    "url": "/#faq"
   }
 ]

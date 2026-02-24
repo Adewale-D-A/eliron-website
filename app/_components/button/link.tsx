@@ -10,7 +10,7 @@ const linkVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-primary h-fit text-white border-none border-primary rounded-full w-fit p-3 px-8 lg:px-14",
+          "bg-orange hover:bg-orange-hover h-fit text-white border-none border-primary rounded-md w-fit p-3 px-8 lg:px-14",
         transparent:
           "bg-transparent h-fit text-primary border border-primary rounded-full w-fit p-3  px-8 lg:px-14 dark:border-white dark:text-white",
         urgent: "bg-red-500 border-0 text-white hover:bg-red-500/80",

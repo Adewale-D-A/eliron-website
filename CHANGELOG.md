@@ -1,3 +1,7 @@
+##### 24.02.2025
+
+> Feature: SPA rework and new UI implementation
+
 ##### 27.01.2025
 
 > Feature: Canonical meta tag addition
