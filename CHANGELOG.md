@@ -1,3 +1,7 @@
+##### 25.03.2025
+
+> Feature: Partners re-inroduction
+
 ##### 24.02.2025
 
 > Feature: SPA rework and new UI implementation

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import metadataContent from "@/app/_assets/seo-meta-data.json";
 import Link from "next/link";
+import InfiniteScroll from "../_components/animations/image-infinite-scroll";
 
 export const metadata: Metadata = metadataContent.home;
 
@@ -22,16 +23,15 @@ export default function Home() {
             <span className="text-orange">Manual Operations</span>
           </h1>
           <p className="hero-sub">
-            Your team spends 20+ hours a week on reports, estimates, and
-            follow-ups that AI can handle in minutes. We help construction and
-            trades businesses automate the work that's eating your margins.
+            Cut 15-25 hours of admin work per week and recover lost revenue
+            using AI-powered operations systems.
           </p>
           <div className="hero-ctas">
             <Link href="#playbook" className="btn btn-primary btn-arrow">
               Get the AI Playbook
             </Link>
-            <Link href="#services" className="btn btn-secondary">
-              Done-For-You Implementation
+            <Link href="/contact-us" className="btn btn-secondary">
+              Book a Free 15-Minute Assessment
             </Link>
           </div>
           <div className="hero-stats">
@@ -54,7 +54,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      <section className=" w-full my-10">
+        <InfiniteScroll />
+      </section>
       <section className="problem flex justify-center" id="problem">
         <div className="w-full max-w-6xl px-5 lg:px-10">
           <div className="problem-header reveal">
