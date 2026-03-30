@@ -1,3 +1,8 @@
+##### 30.03.2025
+
+> Feature: Testimonials and Case study addition
+> Update: UI re-arrangements
+
 ##### 25.03.2025
 
 > Feature: Partners re-inroduction

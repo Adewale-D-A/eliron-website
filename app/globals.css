@@ -265,10 +265,10 @@
 }
 
 .hero h1 {
-  font-size: clamp(36px, 5.5vw, 64px);
+  font-size: clamp(32px, 4vw, 50px);
   font-weight: 700;
   color: var(--white);
-  line-height: 1.08;
+  line-height: 1.2;
   letter-spacing: -1.5px;
   margin-bottom: 24px;
   animation: fadeUp 0.6s ease 0.15s both;
@@ -887,7 +887,7 @@
 }
 
 .service-price .amount {
-  font-size: 36px;
+  font-size: 20px;
   font-weight: 700;
   color: var(--navy);
   font-family: var(--font-mono);
@@ -952,7 +952,7 @@
 
 .process-steps {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 32px;
   margin-top: 48px;
   position: relative;
@@ -1292,7 +1292,7 @@
   }
 
   .hero h1 {
-    font-size: 36px;
+    font-size: 28px;
   }
   .hero-stats {
     grid-template-columns: repeat(2, 1fr);

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import metadataContent from "@/app/_assets/seo-meta-data.json";
 import Link from "next/link";
 import InfiniteScroll from "../_components/animations/image-infinite-scroll";
-
+import testimonials from "@/app/_assets/case-study.json";
 export const metadata: Metadata = metadataContent.home;
 
 export default function Home() {
@@ -18,21 +18,24 @@ export default function Home() {
             AI Implementation for Construction & Trades
           </div>
           <h1>
-            Stop Losing Money to
+            <span className="text-orange">Cut 15–25 Hours</span> of Weekly
             <br />
-            <span className="text-orange">Manual Operations</span>
+            Admin Work and
+            <br />
+            Recover Lost Revenue <br />
+            Using AI-Powered Systems.
           </h1>
           <p className="hero-sub">
-            Cut 15-25 hours of admin work per week and recover lost revenue
-            using AI-powered operations systems.
+            We help construction, trades, and service businesses automate
+            operations, improve efficiency, and increase profitability.
           </p>
           <div className="hero-ctas">
-            <Link href="#playbook" className="btn btn-primary btn-arrow">
-              Get the AI Playbook
-            </Link>
-            <Link href="/contact-us" className="btn btn-secondary">
+            <Link href="/contact-us" className="btn btn-primary btn-arrow">
               Book a Free 15-Minute Assessment
             </Link>
+            {/* <Link  href="#playbook" className="btn btn-secondary">
+              Book a Free 15-Minute Assessment
+            </Link> */}
           </div>
           <div className="hero-stats">
             <div className="hero-stat">
@@ -57,10 +60,61 @@ export default function Home() {
       <section className=" w-full my-10">
         <InfiniteScroll />
       </section>
+
+      <section className="serve flex justify-center" id="serve">
+        <div className="w-full max-w-6xl px-5 lg:px-10">
+          <div className="problem-header reveal">
+            <div className="section-label">Who We Help</div>
+            <h2 className="section-title">
+              Built for Construction Companies and Trades Businesses
+            </h2>
+          </div>
+          <div className="serve-grid">
+            <div className="serve-card reveal">
+              <div className="serve-card-label">Market A</div>
+              <h3>Construction & Infrastructure</h3>
+              <div className="revenue-range">$2M - $500M annual revenue</div>
+              <p>
+                General contractors, subcontractors, EPC firms, developers, and
+                owner's reps. Your pain points: project controls, reporting,
+                schedule management, change orders, and keeping multiple
+                projects on track.
+              </p>
+              <div className="serve-industries">
+                <span className="serve-tag">General Contractors</span>
+                <span className="serve-tag">Subcontractors</span>
+                <span className="serve-tag">EPC Firms</span>
+                <span className="serve-tag">Developers</span>
+                <span className="serve-tag">Owner's Reps</span>
+              </div>
+            </div>
+            <div className="serve-card reveal">
+              <div className="serve-card-label">Market B</div>
+              <h3>Trades & Service Companies</h3>
+              <div className="revenue-range">$500K - $20M annual revenue</div>
+              <p>
+                HVAC, plumbing, electrical, roofing, landscaping, property
+                management, storage facilities, and auto shops. Your pain
+                points: scheduling, customer communication, lead capture,
+                invoicing, and getting organized.
+              </p>
+              <div className="serve-industries">
+                <span className="serve-tag">HVAC</span>
+                <span className="serve-tag">Plumbing</span>
+                <span className="serve-tag">Electrical</span>
+                <span className="serve-tag">Roofing</span>
+                <span className="serve-tag">Landscaping</span>
+                <span className="serve-tag">Property Mgmt</span>
+                <span className="serve-tag">Storage</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="problem flex justify-center" id="problem">
         <div className="w-full max-w-6xl px-5 lg:px-10">
           <div className="problem-header reveal">
-            <div className="section-label">The Problem</div>
+            <div className="section-label">What We Fix</div>
             <h2 className="section-title">
               Your Admin Work Is Killing Your Margins
             </h2>
@@ -73,7 +127,7 @@ export default function Home() {
           <div className="pain-grid">
             <div className="pain-card reveal">
               <div className="pain-icon">&#9888;</div>
-              <h3>Missed Calls, Lost Revenue</h3>
+              <h3>Missed calls and lost leads</h3>
               <p>
                 30-40% of callers who hit voicemail never call back. They call
                 the next company on Google instead.
@@ -82,7 +136,7 @@ export default function Home() {
             </div>
             <div className="pain-card reveal">
               <div className="pain-icon">&#9203;</div>
-              <h3>Reports That Take Forever</h3>
+              <h3> ⁠Slow estimates and follow-ups</h3>
               <p>
                 4-8 hours per project per week on cost reports, schedule
                 updates, and progress reports. For 5 projects, that's a
@@ -92,7 +146,7 @@ export default function Home() {
             </div>
             <div className="pain-card reveal">
               <div className="pain-icon">&#128269;</div>
-              <h3>Slow Estimates Lose Jobs</h3>
+              <h3>Time wasted on reporting</h3>
               <p>
                 Your estimate takes 3 days. Your competitor quotes same-day. The
                 job goes to whoever responds faster, not whoever is better.
@@ -101,35 +155,171 @@ export default function Home() {
             </div>
             <div className="pain-card reveal">
               <div className="pain-icon">&#128172;</div>
-              <h3>Zero Follow-Up System</h3>
+              <h3>Poor scheduling and coordination</h3>
               <p>
                 No estimate follow-up, no review requests, no check-ins. 10-20%
                 of your estimates die from silence alone.
               </p>
               <div className="pain-stat">Revenue left on table</div>
             </div>
-            <div className="pain-card reveal">
-              <div className="pain-icon">&#128197;</div>
-              <h3>Scheduling Chaos</h3>
-              <p>
-                The schedule lives in the owner's head. Changes happen by text.
-                Crews show up at the wrong address.
-              </p>
-              <div className="pain-stat">3-8 hrs/week in confusion</div>
-            </div>
-            <div className="pain-card reveal">
-              <div className="pain-icon">&#128176;</div>
-              <h3>Cash Flow Blind Spots</h3>
-              <p>
-                Invoices sent weeks late. No follow-up on payments. Change
-                orders missed entirely. You find out you lost money at the end.
-              </p>
-              <div className="pain-stat">$15K-$50K+ at risk</div>
-            </div>
           </div>
         </div>
       </section>
 
+      <section className="process flex justify-center " id="process">
+        <div className="w-full max-w-6xl border-t-orange/30 rounded-lg shadow-xs shadow-orange border-t-2 py-16 px-5 lg:px-10">
+          <div className="problem-header reveal">
+            <div className="section-label">How It Works</div>
+            <h2 className="section-title">From Chaos to System in 30 Days</h2>
+          </div>
+          <div className="process-steps">
+            <div className="process-step reveal">
+              <div className="step-number">1</div>
+              <h3>Assess</h3>
+              <p>We assess your operations.</p>
+            </div>
+            <div className="process-step reveal">
+              <div className="step-number">2</div>
+              <h3>Implement</h3>
+              <p>We implement systems.</p>
+            </div>
+            <div className="process-step reveal">
+              <div className="step-number">3</div>
+              <h3>Optimize</h3>
+              <p>We help you run and optimize.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Testimonials */}
+      <section
+        className=" w-full results py-12 flex flex-col items-center justify-center"
+        id="testimonials"
+      >
+        {" "}
+        <div className="problem-header reveal">
+          <div className="section-label">TESTIMONIALS & CASE STUDIES</div>
+          <h2 className=" section-title">
+            Experience real results from real businesses
+          </h2>
+        </div>
+        <div className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-5 px-5 lg:px-10">
+          {testimonials.map((study, index) => (
+            <div key={study.id} className="pain-card">
+              <h2 className="text-xl font-bold text-gray-800 mb-2">
+                {study.title}
+              </h2>
+              <p className="text-sm text-gray-500 mb-4">
+                {study.clientProfile}
+              </p>
+
+              <div className="mb-3">
+                <h4 className="font-semibold text-orange">Challenge</h4>
+                <p className="text-gray-600 text-sm">{study.challenge}</p>
+              </div>
+
+              <div className="mb-3">
+                <h4 className="font-semibold text-orange">Solution</h4>
+                <p className="text-gray-600 text-sm">{study.solution}</p>
+              </div>
+
+              <div className="mb-3">
+                <h4 className="font-semibold text-orange">Results</h4>
+                <ul className="list-disc list-inside text-gray-600 text-sm">
+                  {study.results.map((result, index) => (
+                    <li key={index}>{result}</li>
+                  ))}
+                </ul>
+              </div>
+
+              <blockquote className="italic text-gray-700 border-l-4 border-orange pl-4 mt-4">
+                “{study.feedback}”
+              </blockquote>
+            </div>
+          ))}
+        </div>
+      </section>
+      <section className="services flex justify-center" id="services">
+        <div className="w-full max-w-6xl px-5 lg:px-10">
+          <div className="problem-header reveal">
+            <div className="section-label">
+              Project Controls & Delivery Playbook
+            </div>
+            <h2 className="section-title">How We Work With You</h2>
+          </div>
+          <div className="services-grid">
+            <div className="service-card flex flex-col justify-between reveal">
+              <div>
+                <div className="service-tier">ENTRY</div>
+                <h3>AI OPERATIONS AUDIT</h3>
+                <div className="service-price">
+                  <span className="amount">$500 – $3,000. </span>
+                  <span className="period">one-time</span>
+                </div>
+                <p className="service-desc">
+                  We assess your current operations and identify where time,
+                  revenue, and efficiency are being lost.
+                </p>
+                <p className="service-desc">Includes:</p>
+                <ul className="service-features">
+                  <li>Workflow analysis</li>
+                  <li>Bottleneck identification</li>
+                  <li>AI implementation roadmap</li>
+                </ul>
+              </div>
+              <Link href={`/contact-us?tier_id=1`} className="btn btn-outline">
+                Book Audit
+              </Link>
+            </div>
+            <div className="service-card flex flex-col justify-between featured reveal">
+              <div>
+                <div className="service-tier">CORE</div>
+                <h3>IMPLEMENTATION</h3>
+                <div className="service-price">
+                  <span className="amount">$2,500 – $10,000.</span>
+                  <span className="period">starting at</span>
+                </div>
+                <p className="service-desc">
+                  We design and implement systems that automate your operations
+                  and improve efficiency.
+                </p>
+                <p className="service-desc">Includes:</p>
+                <ul className="service-features">
+                  <li>Reporting automation</li>
+                  <li>Scheduling systems</li>
+                  <li>Communication workflows</li>
+                </ul>
+              </div>
+              <Link href={`/contact-us?tier_id=2`} className="btn btn-primary">
+                Start Implementation
+              </Link>
+            </div>
+            <div className="service-card flex flex-col justify-between reveal">
+              <div>
+                <div className="service-tier">PREMIUM</div>
+                <h3>FRACTIONAL PM / OPERATIONS</h3>
+                <div className="service-price">
+                  <span className="amount">$3,000 – $15,000/month</span>
+                  <span className="period">/month</span>
+                </div>
+                <p className="service-desc">
+                  We embed into your business to oversee projects, optimize
+                  operations, and ensure consistent execution.
+                </p>
+                <p className="service-desc">Includes:</p>
+                <ul className="service-features">
+                  <li>Weekly oversight</li>
+                  <li>Performance tracking</li>
+                  <li>Team coordination.</li>
+                </ul>
+              </div>
+              <Link href={`/contact-us?tier_id=3`} className="btn btn-outline">
+                Work With Us
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="results flex justify-center" id="results">
         <div className="w-full max-w-6xl px-5 lg:px-10">
           <div className="problem-header reveal">
@@ -344,211 +534,12 @@ export default function Home() {
                   </span>
                 </div>
               </div>
-              <Link href="#contact" className="btn btn-primary btn-arrow">
-                Get the Playbook &mdash; $97
+              <Link
+                href="/contact-us?tier_id=1"
+                className="btn btn-primary btn-arrow"
+              >
+                Get the Playbook &mdash; $500
               </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="serve flex justify-center" id="serve">
-        <div className="w-full max-w-6xl px-5 lg:px-10">
-          <div className="problem-header reveal">
-            <div className="section-label">Who We Serve</div>
-            <h2 className="section-title">
-              Built for Construction Companies and Trades Businesses
-            </h2>
-          </div>
-          <div className="serve-grid">
-            <div className="serve-card reveal">
-              <div className="serve-card-label">Market A</div>
-              <h3>Construction & Infrastructure</h3>
-              <div className="revenue-range">$2M - $500M annual revenue</div>
-              <p>
-                General contractors, subcontractors, EPC firms, developers, and
-                owner's reps. Your pain points: project controls, reporting,
-                schedule management, change orders, and keeping multiple
-                projects on track.
-              </p>
-              <div className="serve-industries">
-                <span className="serve-tag">General Contractors</span>
-                <span className="serve-tag">Subcontractors</span>
-                <span className="serve-tag">EPC Firms</span>
-                <span className="serve-tag">Developers</span>
-                <span className="serve-tag">Owner's Reps</span>
-              </div>
-            </div>
-            <div className="serve-card reveal">
-              <div className="serve-card-label">Market B</div>
-              <h3>Trades & Service Companies</h3>
-              <div className="revenue-range">$500K - $20M annual revenue</div>
-              <p>
-                HVAC, plumbing, electrical, roofing, landscaping, property
-                management, storage facilities, and auto shops. Your pain
-                points: scheduling, customer communication, lead capture,
-                invoicing, and getting organized.
-              </p>
-              <div className="serve-industries">
-                <span className="serve-tag">HVAC</span>
-                <span className="serve-tag">Plumbing</span>
-                <span className="serve-tag">Electrical</span>
-                <span className="serve-tag">Roofing</span>
-                <span className="serve-tag">Landscaping</span>
-                <span className="serve-tag">Property Mgmt</span>
-                <span className="serve-tag">Storage</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="services flex justify-center" id="services">
-        <div className="w-full max-w-6xl px-5 lg:px-10">
-          <div className="problem-header reveal">
-            <div className="section-label">How We Work</div>
-            <h2 className="section-title">SERVICES / OFFERINGS</h2>
-            <p className="section-sub">Project Controls & Delivery Playbook</p>
-          </div>
-          <div className="services-grid">
-            <div className="service-card flex flex-col justify-between reveal">
-              <div>
-                <div className="service-tier">Tier 1</div>
-                <h3>The Playbook</h3>
-                <div className="service-price">
-                  <span className="amount">$97</span>
-                  <span className="period">one-time</span>
-                </div>
-                <p className="service-desc">Who It's For</p>
-                <ul className="service-features">
-                  <li>Project Managers</li>
-                  <li>Project Controls Managers</li>
-                  <li>PMOs and delivery practice leads</li>
-                  <li>Consulting firms managing high-risk engagements</li>
-                </ul>
-                <p className="service-desc">What You Get</p>
-                <ul className="service-features">
-                  <li>Proven controls frameworks and templates</li>
-                  <li>Risk and opportunity management tools</li>
-                  <li>Integrated planning and execution guidance</li>
-                  <li>Metrics, dashboards, and accountability models</li>
-                </ul>
-              </div>
-              <Link href={`/contact-us?tier_id=1`} className="btn btn-outline">
-                Access Now
-              </Link>
-            </div>
-            <div className="service-card flex flex-col justify-between featured reveal">
-              <div>
-                <div className="service-tier">Tier 2</div>
-                <h3>Advanced Editions & Expansions</h3>
-                <div className="service-price">
-                  <span className="amount">$2,500</span>
-                  <span className="period">starting at</span>
-                </div>
-                <p className="service-desc">
-                  Extend the Playbook with deeper content tailored to:
-                </p>
-                <ul className="service-features">
-                  <li>Strategic risk governance</li>
-                  <li>Portfolio-level delivery standards</li>
-                  <li>Predictive analytics and early warning indicators</li>
-                  <li>Integration with enterprise planning systems</li>
-                </ul>
-              </div>
-              <Link href={`/contact-us?tier_id=2`} className="btn btn-primary">
-                Contact sales for options
-              </Link>
-            </div>
-            <div className="service-card flex flex-col justify-between reveal">
-              <div>
-                <div className="service-tier">Tier 3</div>
-                <h3>Team & Firm Licensing</h3>
-                <div className="service-price">
-                  <span className="amount">$5,000</span>
-                  <span className="period">/month</span>
-                </div>
-                <p className="service-desc">
-                  Enterprise licence options for organisations that want:
-                </p>
-                <ul className="service-features">
-                  <li>Multi-user access</li>
-                  <li>Internal distribution rights</li>
-                  <li>Customised branding options</li>
-                  <li>Integration support</li>
-                </ul>
-              </div>
-              <Link href={`/contact-us?tier_id=3`} className="btn btn-outline">
-                Request pricing
-              </Link>
-            </div>
-            <div className="service-card flex flex-col justify-between reveal">
-              <div>
-                <div className="service-tier">Tier 4</div>
-                <h3>High-Value Advisory & Consulting Retainers</h3>
-                <div className="service-price">
-                  <span className="amount">$5,000</span>
-                  <span className="period">/month</span>
-                </div>
-                <p className="service-desc">
-                  For organisations facing the toughest delivery challenges,
-                  Eliron offers:
-                </p>
-                <ul className="service-features">
-                  <li>Ongoing advisory retainer support</li>
-                  <li>Custom consulting engagements</li>
-                  <li>
-                    Project health assessments and corrective action planning
-                  </li>
-                  <li>Executive decision support</li>
-                </ul>
-              </div>
-              <Link href={`/contact-us?tier_id=4`} className="btn btn-outline">
-                Talk to an Advisor
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="process flex justify-center">
-        <div className="w-full max-w-6xl px-5 lg:px-10">
-          <div className="problem-header reveal">
-            <div className="section-label">How It Works</div>
-            <h2 className="section-title">From Chaos to System in 30 Days</h2>
-          </div>
-          <div className="process-steps">
-            <div className="process-step reveal">
-              <div className="step-number">1</div>
-              <h3>Assess</h3>
-              <p>
-                Take the 5-minute AI Readiness Assessment. Identify your
-                highest-impact starting point.
-              </p>
-            </div>
-            <div className="process-step reveal">
-              <div className="step-number">2</div>
-              <h3>Implement</h3>
-              <p>
-                Set up your tools, run the prompts, customize templates for your
-                business. One playbook at a time.
-              </p>
-            </div>
-            <div className="process-step reveal">
-              <div className="step-number">3</div>
-              <h3>Refine</h3>
-              <p>
-                Test on real projects. Adjust prompts based on results. Train
-                your team on the new system.
-              </p>
-            </div>
-            <div className="process-step reveal">
-              <div className="step-number">4</div>
-              <h3>Scale</h3>
-              <p>
-                Measure ROI. Add the next playbook. After 3-4 playbooks, save
-                15-40 hours per week.
-              </p>
             </div>
           </div>
         </div>

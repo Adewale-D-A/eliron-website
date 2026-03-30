@@ -1,0 +1,59 @@
+[
+  {
+    "id": 1,
+    "sector": "Construction",
+    "title": "How a Mid-Sized Contractor Reduced Reporting Time by 85% and Improved Project Visibility",
+    "clientProfile": "General Contractor | $8M Annual Revenue | 6 Active Projects",
+    "challenge": "The client’s PM team was spending 5-7 hours weekly per project compiling reports, with limited real-time visibility into cost overruns and delays.",
+    "solution": "Implemented an AI-powered reporting and project controls system that automated weekly reporting, standardized templates, and flagged risks early.",
+    "results": [
+      "Reporting time reduced from 6 hours to 45 minutes per project.",
+      "Improved visibility across all active projects.",
+      "Earlier identification of budget and schedule risks.",
+      "PMs redirected time to actual project execution."
+    ],
+    "feedback": "We didn’t realize how much time we were losing on reporting until this was implemented. The difference is immediate and practical."
+  },
+  {
+    "id": 2,
+    "sector": "HVAC",
+    "title": "Recovering Lost Revenue from Missed Calls & Slow Follow-Up",
+    "clientProfile": "HVAC Company | $1.2M Annual Revenue",
+    "challenge": "Missed inbound calls and delayed responses were leading to lost jobs and inconsistent customer experience.",
+    "solution": "Implemented an AI-assisted communication and follow-up system, including automated responses and structured lead tracking.",
+    "results": [
+      "Reduced missed calls and response delays.",
+      "Improved lead conversion consistency.",
+      "Increased visibility into customer pipeline."
+    ],
+    "feedback": "We didn’t change our team, we just changed how we operate. The system now does what we used to forget."
+  },
+  {
+    "id": 3,
+    "sector": "Property Management",
+    "title": "Streamlining Tenant Communication & Maintenance Tracking",
+    "clientProfile": "Property Management Firm | 120+ Units",
+    "challenge": "Overwhelming tenant communication and poor tracking of maintenance requests.",
+    "solution": "Introduced structured workflows and AI-assisted communication templates for tenant requests and updates.",
+    "results": [
+      "Faster response time to tenants.",
+      "Improved organization of maintenance requests.",
+      "Reduced manual coordination workload."
+    ],
+    "feedback": "Everything is now structured. We are no longer reacting, we are managing."
+  },
+  {
+    "id": 4,
+    "sector": "Small Contractor / Trades",
+    "title": "From Reactive Operations to Structured Workflow",
+    "clientProfile": "Small Contractor | $750K Revenue",
+    "challenge": "No defined systems for scheduling, communication, or tracking jobs.",
+    "solution": "Set up simple operational systems (scheduling, communication templates, job tracking).",
+    "results": [
+      "Improved day-to-day coordination.",
+      "Reduced missed follow-ups.",
+      "Clearer visibility of ongoing work."
+    ],
+    "feedback": "Before this, everything was in my head. Now the business runs more smoothly without me chasing everything."
+  }
+]
