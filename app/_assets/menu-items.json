@@ -1,22 +1,76 @@
 [
   {
     "id": "1",
-    "label": "Why AI",
-    "url": "/#problem"
+    "label": "Services",
+    "url": "/services",
+    "children": [
+      {
+        "id": "1",
+        "label": "AI Playbook",
+        "url": "/services/ai-playbook"
+      },
+      {
+        "id": "2",
+        "label": "AI Operations Audit",
+        "url": "/services/operations-audit"
+      },
+      {
+        "id": "3",
+        "label": "Project Staffing",
+        "url": "/services/project-staffing"
+      },
+      {
+        "id": "4",
+        "label": "Owner's Representation",
+        "url": "/services/owners-representation"
+      },
+      {
+        "id": "5",
+        "label": "Program Recovery Audit",
+        "url": "/services/program-recovery-audit"
+      },
+      {
+        "id": "6",
+        "label": "Fractional PM",
+        "url": "/services/fractional-pm"
+      },
+      {
+        "id": "7",
+        "label": "Pricing",
+        "url": "/services/pricing"
+      }
+    ]
   },
   {
     "id": "2",
     "label": "Playbook",
-    "url": "/#playbook"
+    "url": "/playbook"
   },
   {
     "id": "3",
-    "label": "Services",
-    "url": "/#services"
+    "label": "Industries",
+    "url": "/industries",
+    "children": [
+      {
+        "id": "1",
+        "label": "Constructions",
+        "url": "/industries/constructions"
+      },
+      {
+        "id": "2",
+        "label": "Trades Sevices",
+        "url": "/industries/trades-services"
+      }
+    ]
   },
   {
     "id": "4",
-    "label": "FAQ",
-    "url": "/#faq"
+    "label": "Case studies",
+    "url": "/case-studeis"
+  },
+  {
+    "id": "5",
+    "label": "about",
+    "url": "/about-us"
   }
 ]
