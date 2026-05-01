@@ -5,7 +5,7 @@ import CustomLink from "../button/link";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/app/_utils/cn";
-import { Menu } from "lucide-react";
+import { ChevronDown, Menu } from "lucide-react";
 import { useState } from "react";
 import MobileMenu from "./mobile-menu";
 import menuItems from "@/app/_assets/menu-items.json";
@@ -21,7 +21,7 @@ export default function NavMenu() {
     <>
       <nav
         className={cn(
-          "w-full flex justify-center fixed top-0 left-0 z-50 transition-all overflow-x-clip",
+          "w-full flex justify-center fixed top-0 left-0 z-50 transition-all ",
           scrolled || pathname !== "/"
             ? " bg-[#0f1b33f7] backdrop-blur-md shadow-md"
             : "",
@@ -37,19 +37,38 @@ export default function NavMenu() {
             <Menu />
           </button>
           <Logo />
-          <div className=" flex items-center gap-5 ">
-            <div className="w-fit hidden text-sm lg:flex max-w-lg items-center lg:gap-8 font-semibold">
+          <div className="w-fit flex items-center gap-5 ">
+            <div className=" hidden text-sm lg:flex items-center lg:gap-8 font-semibold">
               {menuItems.map((item) => (
-                <Link
-                  href={item?.url}
-                  key={item?.id}
-                  className={cn(
-                    " hover:text-white text-gray-300 transition-all",
-                    // pathname.includes(item?.url) && "text-primary",
+                <div key={item?.id} className=" group relative">
+                  <Link
+                    href={item.children ? "#" : item?.url}
+                    className={cn(
+                      " hover:text-white text-gray-300 transition-all flex items-center gap-2",
+                      // pathname.includes(item?.url) && "text-primary",
+                    )}
+                  >
+                    {item?.label}{" "}
+                    {item.children && (
+                      <ChevronDown className=" w-4 h-4 rotate-180 transition-all group-hover:rotate-0" />
+                    )}
+                  </Link>
+                  {item.children && (
+                    <div className="w-40 hidden group-hover:block absolute top-0 pt-8 right-0 ">
+                      <div className="w-full bg-white rounded-lg flex flex-col gap-2 shadow shadow-orange">
+                        {item.children?.map((child) => (
+                          <Link
+                            href={child?.url}
+                            key={child.id}
+                            className=" text-navy hover:bg-orange hover:text-white border-b border-gray-300 py-1 p-2 transition-all"
+                          >
+                            {child?.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
                   )}
-                >
-                  {item?.label}
-                </Link>
+                </div>
               ))}
             </div>
             <CustomLink href="/contact-us">Talk To Us</CustomLink>

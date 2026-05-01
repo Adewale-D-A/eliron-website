@@ -1,3 +1,11 @@
+##### 01.05.2025
+
+> Feature: Page segregation completion
+
+##### 30.04.2025
+
+> Fetaure: Page segregation
+
 ##### 30.03.2025
 
 > Feature: Testimonials and Case study addition
