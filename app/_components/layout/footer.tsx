@@ -16,7 +16,6 @@ export default function FooterMenu() {
           </div>
           <div className="footer-col">
             <h4>Services</h4>
-            <Link href="/services/ai-playbook">AI Playbook</Link>
             <Link href="/services/operations-audit">AI Operations Audit</Link>
             <Link href="/services/project-staffing">Project Staffing</Link>
             <Link href="/services/owners-representation">

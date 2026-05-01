@@ -55,7 +55,7 @@ export default function NavMenu() {
                   </Link>
                   {item.children && (
                     <div className="w-40 hidden group-hover:block absolute top-0 pt-8 right-0 ">
-                      <div className="w-full bg-white rounded-lg flex flex-col">
+                      <div className="w-full bg-white rounded-lg flex flex-col gap-2 shadow shadow-orange">
                         {item.children?.map((child) => (
                           <Link
                             href={child?.url}

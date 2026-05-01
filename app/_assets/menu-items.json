@@ -5,11 +5,6 @@
     "url": "/services",
     "children": [
       {
-        "id": "1",
-        "label": "AI Playbook",
-        "url": "/services/ai-playbook"
-      },
-      {
         "id": "2",
         "label": "AI Operations Audit",
         "url": "/services/operations-audit"
@@ -66,7 +61,7 @@
   {
     "id": "4",
     "label": "Case studies",
-    "url": "/case-studeis"
+    "url": "/case-studies"
   },
   {
     "id": "5",
