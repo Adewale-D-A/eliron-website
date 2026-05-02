@@ -1,6 +1,7 @@
 ##### 02.05.2025
 
 > Feature: Total UI Change
+> Feature: SEO Updates
 
 ##### 01.05.2025
 

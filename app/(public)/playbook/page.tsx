@@ -1,4 +1,8 @@
 import Link from "next/link";
+import { Metadata } from "next";
+import metadataContent from "@/app/_assets/seo-meta-data.json";
+
+export const metadata: Metadata = metadataContent.playbook;
 
 export default function AiPlaybook() {
   return (
