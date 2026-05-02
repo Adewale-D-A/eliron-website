@@ -1193,7 +1193,7 @@
 }
 
 .footer-brand p {
-  color: var(--gray-400);
+  /* color: var(--gray-400); */
   font-size: 14px;
   line-height: 1.7;
   margin-top: 12px;
@@ -1216,9 +1216,9 @@
   transition: color 0.2s;
 }
 
-.footer-col a:hover {
+/* .footer-col a:hover {
   color: var(--orange);
-}
+} */
 
 .footer-bottom {
   border-top: 1px solid var(--navy-light);
@@ -1229,19 +1229,19 @@
 }
 
 .footer-bottom p {
-  color: var(--gray-500);
+  /* color: var(--gray-500); */
   font-size: 13px;
 }
 
 .footer-bottom a {
-  color: var(--gray-500);
+  /* color: var(--gray-500); */
   font-size: 13px;
   transition: color 0.2s;
 }
 
-.footer-bottom a:hover {
+/* .footer-bottom a:hover {
   color: var(--orange);
-}
+} */
 
 /* ============================================
            RESPONSIVE

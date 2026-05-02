@@ -2,6 +2,7 @@
 
 > Feature: Total UI Change
 > Feature: SEO Updates
+> Update: Footer color adjustments
 
 ##### 01.05.2025
 
