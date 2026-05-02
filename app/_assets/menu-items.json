@@ -48,11 +48,16 @@
     "children": [
       {
         "id": "1",
+        "label": "Energy & Utilities",
+        "url": "/industries/energy-and-utilities"
+      },
+      {
+        "id": "2",
         "label": "Constructions",
         "url": "/industries/constructions"
       },
       {
-        "id": "2",
+        "id": "3",
         "label": "Trades Sevices",
         "url": "/industries/trades-services"
       }

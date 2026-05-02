@@ -2,7 +2,7 @@ import { cn } from "@/app/_utils/cn";
 import { MoveRight } from "lucide-react";
 import Link from "next/link";
 
-export default function ConstructionInfrastructure() {
+export default function EnergyAndUtilities() {
   return (
     <div className="w-full flex flex-col items-center justify-center bg-white">
       <section className="hero w-full justify-center" id="hero">
@@ -11,18 +11,17 @@ export default function ConstructionInfrastructure() {
         <div className="hero-gradient hero-gradient-2"></div>
         <div className="w-full max-w-6xl px-5 lg:px-10 hero-content">
           <p className="hero-badge">
-            {" "}
-            For Contractors, EPC Firms, and Developers
+            For Energy & Utility Capital Project Leaders
           </p>
           <h1 className=" text-4xl lg:text-7xl font-bold">
-            Project controls and PMO support,
+            Capital project discipline,
             <br />
-            <span className="text-orange">built for the way you work.</span>
+            <span className="text-orange">delivered locally.</span>
           </h1>
           <p className="hero-sub">
-            Reporting, scheduling, and coordination across multi-project
-            portfolios. AI-augmented templates compress weekly admin from hours
-            to minutes.
+            Houston-based program management, owner's rep, and project controls
+            for utilities, midstream operators, renewable developers, and tier-2
+            data centers. Senior leadership at a fraction of Big 4 cost.
           </p>
           <div className="hero-ctas">
             <Link href="/contact-us" className="btn btn-primary btn-arrow">
@@ -45,13 +44,101 @@ export default function ConstructionInfrastructure() {
         </div>
         <div className=" w-full mt-6 lg:mt-0 text-gray-600 space-y-5">
           <p>
-            {" "}
-            Construction and infrastructure projects often suffer from
-            fragmented reporting, slow scheduling cycles, and lack of
-            portfolio-level visibility. Traditional consulting models are too
-            expensive and slow for the discrete pieces of work that actually
-            need outside discipline. Eliron was built to fill that gap.
+            Most energy and utility owners we talk to face the same three
+            pressures. Capital rograms are slipping later than internal teams
+            realize, project controls capacity is thinner than it should be for
+            the program scale, and Big 4 firms are too expensive for the
+            discrete pieces of work that actually need outside discipline. We
+            were built for that gap.
           </p>
+          <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-5">
+            {[
+              {
+                id: "i",
+                title: "Programs slip and recover late",
+                description:
+                  "By the time the steering committee sees a red status, three months of float are gone and the recovery options are constrained.",
+              },
+              {
+                id: "ii",
+                title: "Controls capacity is thin",
+                description:
+                  "Cost and schedule analysts are stretched, risk reporting becomes reactive, and change orders surprise you.",
+              },
+              {
+                id: "iii",
+                title: "Owner's rep is internal-only",
+                description:
+                  " outside discipline on EPC vendors and major contractors costs creep schedules drift, and accountability blurs.",
+              },
+            ].map((it) => (
+              <div
+                key={it.id}
+                className=" reveal border-t border-orange pt-4 space-y-4"
+              >
+                <p className=" text-orange italic">{it.id}.</p>
+                <h3 className=" font-bold text-xl text-orange">{it.title}</h3>
+                <p className="">{it.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="serve bg-white flex justify-center py-16 border-t border-gray-300">
+        <div className="w-full max-w-6xl px-5 lg:px-10">
+          <div className="problem-header text-left reveal">
+            <div className="section-label">What sets us apart</div>
+            <h2 className="section-title text-navy">
+              Why we win in this space.
+            </h2>
+          </div>
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            {[
+              {
+                id: 1,
+                title: "Houston HQ",
+                description:
+                  "n the energy capital of the United tates. same ume zone, same industry fluency",
+
+                isPrimaryBg: true,
+              },
+              {
+                id: 2,
+                title: "Senior-led",
+                description:
+                  "very engagement led by senior PMs with capital project background. No juniors fronting work.",
+
+                isPrimaryBg: false,
+              },
+              {
+                id: 3,
+                title: "50% less cost",
+                description:
+                  "Than Big 4 for comparable scope. Same caliber of leadership, leaner team structure.",
+
+                isPrimaryBg: true,
+              },
+              {
+                id: 4,
+                title: "2-week start",
+                description:
+                  "From signed agreement to engagement kickoff. Big 4 starts in two quarters",
+
+                isPrimaryBg: true,
+              },
+            ].map((it, indx) => (
+              <div
+                key={it.id}
+                className={cn(
+                  " reveal space-y-1 border-l border-orange text-gray-700 px-4",
+                )}
+              >
+                <h3 className=" font-bold text-2xl ">{it.title}</h3>
+                <p>{it.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

@@ -1,3 +1,7 @@
+##### 02.05.2025
+
+> Feature: Total UI Change
+
 ##### 01.05.2025
 
 > Feature: Page segregation completion

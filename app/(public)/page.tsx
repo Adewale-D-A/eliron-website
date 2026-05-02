@@ -1,7 +1,9 @@
 import { Metadata } from "next";
 import metadataContent from "@/app/_assets/seo-meta-data.json";
 import Link from "next/link";
-import InfiniteScroll from "../_components/animations/image-infinite-scroll";
+// import InfiniteScroll from "../_components/animations/image-infinite-scroll";
+import { Building, MoveRight, Toolbox, TrendingUp, Zap } from "lucide-react";
+import { cn } from "../_utils/cn";
 export const metadata: Metadata = metadataContent.home;
 
 export default function Home() {
@@ -13,28 +15,30 @@ export default function Home() {
         <div className="hero-gradient hero-gradient-1"></div>
         <div className="hero-gradient hero-gradient-2"></div>
         <div className="w-full max-w-6xl px-5 lg:px-10 hero-content">
-          <div className="hero-badge">Project & Program Management</div>
-          <h1>
-            <span className="text-orange">Cut 15–25 Hours</span> of Weekly
+          <p className="hero-badge">
+            PROJECT & PROGRAM MANAGEMENT • HOUSTON TEXAS
+          </p>
+          <h1 className=" text-4xl lg:text-7xl font-bold">
+            Execution discipline
             <br />
-            Admin Work and
-            <br />
-            Recover Lost Revenue <br />
-            Using AI-Powered Systems.
+            for
+            <span className="text-orange"> complex programs.</span>
           </h1>
           <p className="hero-sub">
-            We help construction, trades, and service businesses automate
-            operations, improve efficiency, and increase profitability.
+            Elion delivers senior project and program management with Al-
+            augmented execution for energy, infrastructure, and growth-stage
+            companies. Houston-headquarters, serving clients nationally, at a
+            fraction of Big 4 cost.
           </p>
           <div className="hero-ctas">
             <Link href="/contact-us" className="btn btn-primary btn-arrow">
-              Book a Free 15-Minute Assessment
+              Talk to us
             </Link>
-            {/* <Link  href="#playbook" className="btn btn-secondary">
-              Book a Free 15-Minute Assessment
-            </Link> */}
+            <Link href="/case-studies" className="btn btn-secondary">
+              See our work
+            </Link>
           </div>
-          <div className="hero-stats">
+          {/* <div className="hero-stats">
             <div className="hero-stat">
               <div className="hero-stat-value">80-90%</div>
               <div className="hero-stat-label">Reporting Time Cut</div>
@@ -51,96 +55,339 @@ export default function Home() {
               <div className="hero-stat-value">30 Days</div>
               <div className="hero-stat-label">To Full Implementation</div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
-      <section className=" w-full my-10">
+      {/* <section className=" w-full my-10">
         <InfiniteScroll />
-      </section>
+      </section> */}
 
-      <section className="serve flex justify-center" id="serve">
+      {/* Who we serve */}
+      <section
+        className="serve bg-white text-navy flex justify-center"
+        id="serve"
+      >
         <div className="w-full max-w-6xl px-5 lg:px-10">
-          <div className="problem-header reveal">
-            <div className="section-label">Who We Help</div>
+          <div className="problem-header text-left reveal">
+            <div className="section-label">Who We Serve</div>
             <h2 className="section-title">
-              Built for Construction Companies and Trades Businesses
+              Pick the work you do. <br />
+              Wel'll show you how we'd fit in
             </h2>
           </div>
-          <div className="serve-grid">
-            <Link
-              href={"/industries/constructions"}
-              className="serve-card reveal"
-            >
-              <div className="serve-card-label">Market A</div>
-              <h3>Construction & Infrastructure</h3>
-              <div className="revenue-range">$2M - $500M annual revenue</div>
-              <p>
-                General contractors, subcontractors, EPC firms, developers, and
-                owner's reps. Your pain points: project controls, reporting,
-                schedule management, change orders, and keeping multiple
-                projects on track.
-              </p>
-              <div className="serve-industries">
-                <span className="serve-tag">General Contractors</span>
-                <span className="serve-tag">Subcontractors</span>
-                <span className="serve-tag">EPC Firms</span>
-                <span className="serve-tag">Developers</span>
-                <span className="serve-tag">Owner's Reps</span>
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            {[
+              {
+                id: 1,
+                icon: Zap,
+                title: "Energy & Utilities",
+                description:
+                  "Capital project leaders, controls managers, owner's reps. Houston advantgae.",
+                href: "/industries/constructions",
+              },
+              {
+                id: 2,
+                icon: Building,
+                title: "Construction & Infrastructure",
+                description:
+                  "GCs, EPC firms, developers, owner's rep. Project controls, and PMO support",
+                href: "/industries/constructions",
+              },
+              {
+                id: 3,
+                icon: TrendingUp,
+                title: "Growth-Stage Companies",
+                description:
+                  "Post-raise founders and operations. Fractional PMO ofr the next 18 months.",
+                href: "/industries/trades-services",
+              },
+              {
+                id: 4,
+                icon: Toolbox,
+                title: "Trandes & Services",
+                description:
+                  "HVAC, electrical, plumbing, roofing, property management. AI playbook starts at $97",
+                href: "/industries/trades-services",
+              },
+            ].map((it) => (
+              <div
+                key={it.id}
+                className="serve-card h-full flex flex-col justify-between reveal space-y-2"
+              >
+                <div className=" space-y-2">
+                  <it.icon className=" text-navy" />
+                  <h3 className=" font-semibold">{it.title}</h3>
+                  <p className=" text-gray-500">{it.description}</p>
+                </div>
+                <Link
+                  key={it.id}
+                  href={it.href}
+                  className="text-orange flex items-center gap-1 font-bold"
+                >
+                  Explore <MoveRight className=" h-4 w-4 " />
+                </Link>
               </div>
-            </Link>
-            <Link
-              href={"/industries/trades-services"}
-              className="serve-card reveal"
-            >
-              <div className="serve-card-label">Market B</div>
-              <h3>Trades & Service Companies</h3>
-              <div className="revenue-range">$500K - $20M annual revenue</div>
-              <p>
-                HVAC, plumbing, electrical, roofing, landscaping, property
-                management, storage facilities, and auto shops. Your pain
-                points: scheduling, customer communication, lead capture,
-                invoicing, and getting organized.
-              </p>
-              <div className="serve-industries">
-                <span className="serve-tag">HVAC</span>
-                <span className="serve-tag">Plumbing</span>
-                <span className="serve-tag">Electrical</span>
-                <span className="serve-tag">Roofing</span>
-                <span className="serve-tag">Landscaping</span>
-                <span className="serve-tag">Property Mgmt</span>
-                <span className="serve-tag">Storage</span>
-              </div>
-            </Link>
+            ))}
           </div>
         </div>
       </section>
 
-      <section className="cta-section flex justify-center" id="contact">
+      {/* Our services */}
+      <section className="serve bg-white flex justify-center" id="serve">
         <div className="w-full max-w-6xl px-5 lg:px-10">
-          <div className="cta-inner">
-            <h2>Ready to Stop Losing Time and Money?</h2>
-            <p>
-              Get the AI Playbook today and start automating your operations
-              this week. Or book a free assessment for done-for-you
-              implementation.
-            </p>
-            <div className=" flex gap-4 justify-center flex-wrap">
-              <Link
-                href="/services/ai-playbook"
-                className="btn btn-white btn-arrow"
+          <div className="problem-header text-left reveal">
+            <div className="section-label">Our Services</div>
+            <h2 className="section-title text-navy">
+              Six ways to start working with Eliron.
+            </h2>
+          </div>
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {[
+              {
+                id: 1,
+                title: "Fractional PMO Leadership",
+                description:
+                  "enior PM embedded in your operations two to three days a week.",
+                value: "$15-25K/month",
+                href: "/services/fractional-pm",
+                isPrimaryBg: true,
+              },
+              {
+                id: 2,
+                title: "Program Recovery Audit",
+                description:
+                  "Diagnostics of stalled or troubled programs. Root cause and recovery plan.",
+                value: "$30-60K fixed",
+                href: "/services/program-recovery-audit",
+                isPrimaryBg: false,
+              },
+              {
+                id: 3,
+                title: "Owner's Representative",
+                description:
+                  "Independent oversightof EPC, GC, and major vendor delivery.",
+                value: "$15-30K/month",
+                href: "/services/owners-representation",
+                isPrimaryBg: true,
+              },
+              {
+                id: 4,
+                title: "Project Staffing (C2C)",
+                description:
+                  "Vetted contract PMs, schedulers, and analyst placed in two weeks",
+                value: "$90-180/hr",
+                href: "/services/project-staffing",
+                isPrimaryBg: true,
+              },
+              {
+                id: 5,
+                title: "AI Operations Audit",
+                description:
+                  "Two-week diagnostic of where ops are losing time and revenue",
+                value: "$500-3k",
+                href: "/services/operations-audit",
+                isPrimaryBg: true,
+              },
+              {
+                id: 6,
+                title: "AI implementation",
+                description:
+                  "AI-augmentation systems for reporting, scheduling, and customer comm.",
+                value: "$2.5K-10K/hr",
+                href: "/services/fractional-pm",
+                isPrimaryBg: true,
+              },
+            ].map((it, indx) => (
+              <div
+                key={it.id}
+                className={cn(
+                  "serve-card reveal  text-gray-200 space-y-1",
+                  it.isPrimaryBg ? "bg-navy" : "bg-orange",
+                )}
               >
-                Get the Playbook
-              </Link>
-              <Link
-                href="/contact-us?tier_id=2"
-                className="btn btn-secondary border border-[rgba(255,255,255,0.5)] text-white"
-              >
-                Twenty-minute intro call
-              </Link>
-            </div>
+                <p className=" text-gray-200 text-xs tracking-widest">
+                  SERVICE 0{indx + 1}
+                </p>
+                <h3 className=" font-bold">{it.title}</h3>
+                <p>{it.description}</p>
+                <div className=" w-full flex justify-between mt-5 gap-2 border-t border-gray-600 pt-5">
+                  <span className=" italic">{it.value}</span>
+                  <Link
+                    key={it.id}
+                    href={it.href}
+                    className=" flex items-center gap-1 font-bold"
+                  >
+                    <MoveRight className=" h-4 w-4 " />
+                  </Link>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
+
+      {/* Why Eliron */}
+      <section className="serve flex justify-center bg-navy" id="serve">
+        <div className="w-full max-w-6xl px-5 lg:px-10">
+          <div className="problem-header text-left reveal">
+            <div className="section-label">Why Eliron</div>
+            <h2 className="section-title text-white">
+              Senior leadership <br />
+              <span className=" text-orange">Al-augmented delivery</span>
+            </h2>
+          </div>
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {[
+              {
+                id: 1,
+                title: "Senior leadership, embedded",
+                description:
+                  "Every engagement is led by a senior US-based PM or program manager with capital project and perations background. We do not put juniors in front of clients.",
+              },
+              {
+                id: 2,
+                title: "AI-augmented deivery",
+                description:
+                  "Our delivery team use AI to compress reporting, status andn documentation work . You get faster output and lower cost than a traditional consulting model",
+              },
+              {
+                id: 3,
+                title: "Houston roots, US delivery",
+                description:
+                  "Houston-headquartered with delivery support nationally. We work in the same time zone as our energy and infrastructure client. We are not Accenture or Deloitte",
+              },
+            ].map((it, indx) => (
+              <div
+                key={it.id}
+                className={cn(" reveal border-t border-orange pt-8 space-y-4")}
+              >
+                <p className="text-xs tracking-widest font-bold text-orange italic">
+                  0{indx + 1}.
+                </p>
+                <h3 className=" font-bold">{it.title}</h3>
+                <p className=" text-gray-400">{it.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Selected Engagements */}
+      <section className="serve bg-white flex justify-center" id="serve">
+        <div className="w-full max-w-6xl px-5 lg:px-10">
+          <div className="problem-header text-left reveal">
+            <div className="section-label">Selected Engagments</div>
+            <h2 className="section-title text-navy">
+              What changes when execution works.
+            </h2>
+          </div>
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {[
+              {
+                id: 1,
+                title: "Reportting time cut by 85%",
+                description:
+                  "PM reporting dropped by 6 hours to 45 minutes per project. Risk surfaced 2-4 wekks earlier",
+                subTitle: "Construction Tech",
+                href: "/case-studies",
+              },
+              {
+                id: 2,
+                title: "From reactive to structured",
+                description:
+                  "Tenant response times cut significantly. Manual coordination reduced by an estimated 40%.",
+                subTitle: "Property Operations",
+                href: "/case-studies",
+              },
+              {
+                id: 3,
+                title: "Recovering lost pipeline revenue",
+                description:
+                  "Missed cal rate dropped  to under 2%. Visible customer pipeline or the first time.",
+                subTitle: "Field Service",
+                href: "/case-studies",
+              },
+            ].map((it, indx) => (
+              <div
+                key={it.id}
+                className={cn(
+                  "serve-card reveal h-full flex flex-col justify-between  text-gray-700 space-y-1",
+                )}
+              >
+                <div className="space-y-1">
+                  <p className="  text-xs tracking-wide uppercase text-orange font-bold">
+                    {it.subTitle}
+                  </p>
+                  <h3 className=" font-bold">{it.title}</h3>
+                  <p>{it.description}</p>
+                </div>
+                <div className=" w-full flex items-center gap-1.5 font-bold">
+                  <span className=" italic">Read the case</span>
+                  <Link
+                    key={it.id}
+                    href={it.href}
+                    className=" flex items-center gap-1 font-bold"
+                  >
+                    <MoveRight className=" h-4 w-4 " />
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className=" bg-white py-16 flex justify-center w-full">
+        <div className="w-full max-w-6xl px-5 py-16 lg:px-10 flex justify-between flex-col lg:flex-row gap-5 text-center lg:text-left items-center bg-orange/5 lg:rounded-2xl border border-orange">
+          <div className="text-gray-700 space-y-5">
+            <p className="hero-badge">
+              PROJECT & PROGRAM MANAGEMENT • HOUSTON TEXAS
+            </p>
+            <h2 className="font-bold text-4xl">Just want the playbook?</h2>
+            <p className=" max-w-xl">
+              Our $97 AI Playbook gives SMB owners a 30-day rollout plan with
+              50+ prompts and 8 SOPs. Built for trades and field services. No
+              consultant required
+            </p>
+          </div>
+
+          <Link href="/contact-us" className="btn btn-primary btn-arrow">
+            Get the Playbook • $97
+          </Link>
+        </div>
+      </section>
+
+      {/* Next step */}
+      <div className=" w-full bg-white py-16">
+        <section className="serve flex justify-center bg-navy my-16">
+          <div className="w-full max-w-6xl px-5 lg:px-10">
+            <div className="problem-header reveal text-center space-y-7">
+              <div className="section-label text-center">Next Step</div>
+              <h2 className="section-title text-white">
+                Twenty-minute ntro call. <br />
+                <span className=" text-orange">No deck, no pitch.</span>
+              </h2>
+              <p className=" text-gray-200">
+                Tell us where execution is breaking. We'll tell you whether we
+                can help, and if not, who can.
+              </p>
+              <div className="w-full flex justify-center hero-ctas">
+                <Link href="/contact-us" className="btn btn-primary btn-arrow">
+                  Book a call
+                </Link>
+                <Link
+                  target="_blank"
+                  rel="noreferrer"
+                  href={"mailto:hello@elironco.com"}
+                  className="btn btn-secondary"
+                >
+                  Email Us Instead
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
   );
 }
