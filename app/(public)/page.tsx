@@ -259,13 +259,15 @@ export default function Home() {
             ].map((it, indx) => (
               <div
                 key={it.id}
-                className={cn(" reveal border-t border-orange pt-8 space-y-4")}
+                className={cn(
+                  " reveal text-white border-t border-orange pt-8 space-y-4",
+                )}
               >
                 <p className="text-xs tracking-widest font-bold text-orange italic">
                   0{indx + 1}.
                 </p>
                 <h3 className=" font-bold">{it.title}</h3>
-                <p className=" text-gray-400">{it.description}</p>
+                <p className=" text-gray-300">{it.description}</p>
               </div>
             ))}
           </div>

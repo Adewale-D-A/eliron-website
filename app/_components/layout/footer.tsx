@@ -3,7 +3,7 @@ import { Logo } from "../logo";
 
 export default function FooterMenu() {
   return (
-    <footer className="footer flex justify-center">
+    <footer className="footer text-white flex justify-center">
       <div className="w-full max-w-6xl px-5 lg:px-10">
         <div className="footer-grid">
           <div className="footer-brand space-y-5">
