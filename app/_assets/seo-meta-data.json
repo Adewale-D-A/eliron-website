@@ -68,5 +68,166 @@
     "alternates": {
       "canonical": "./"
     }
+  },
+  "fractionalPMO": {
+    "title": "Fractional PMO Services | Senior PM Leadership | Eliron",
+    "description": "Senior project and program management embedded in your operations 2–3 days/week. $15–25K/month. Built for growth-stage and mid-market companies. Houston-based.",
+    "keywords": [
+      "fractional PMO services",
+      "fractional project management",
+      "fractional COO operations",
+      "embedded project manager"
+    ],
+    "alternates": {
+      "canonical": "./services/fractional-pmo"
+    }
+  },
+  "programRecoveryAudit": {
+    "title": "Program Recovery Audit | Capital Project Diagnostic | Eliron",
+    "description": "Four to six week diagnostic for stalled or troubled capital programs. Root cause, recovery plan, ownership reset. $30–60K fixed fee. Energy and infrastructure focus.",
+    "keywords": [
+      "program recovery audit",
+      "capital project recovery",
+      "program turnaround consulting",
+      "project rescue services"
+    ],
+    "alternates": {
+      "canonical": "./services/program-recovery-audit"
+    }
+  },
+  "ownersRepresentative": {
+    "title": "Owner's Representative Services Houston | Capital Projects | Eliron",
+    "description": "Independent owner's rep oversight of EPC, GC, and major vendor delivery on capital projects $5M and above. Houston-based. Energy, midstream, infrastructure.",
+    "keywords": [
+      "owner's representative services Houston",
+      "owner's rep capital projects",
+      "independent project oversight",
+      "EPC management consulting"
+    ],
+    "alternates": {
+      "canonical": "./services/owners-representative"
+    }
+  },
+  "projectStaffing": {
+    "title": "Contract Project Manager Staffing Houston | C2C | Eliron",
+    "description": "Vetted contract PMs, schedulers, and project controls analysts placed in two weeks. Eliron is vendor of record. Energy, infrastructure, construction. Houston-based.",
+    "keywords": [
+      "contract project manager staffing",
+      "C2C project management",
+      "project controls staffing Houston",
+      "scheduler staffing"
+    ],
+    "alternates": {
+      "canonical": "./services/project-staffing"
+    }
+  },
+  "aiOperationsAudit": {
+    "title": "AI Operations Audit | $500–3K | 2-Week Diagnostic | Eliron",
+    "description": "Two-week operations diagnostic. Written findings, prioritized action list, no commitment. Built for SMBs and growth-stage companies. Starting at $500.",
+    "keywords": [
+      "operations audit consulting",
+      "AI operations diagnostic",
+      "business process audit",
+      "SMB operations improvement"
+    ],
+    "alternates": {
+      "canonical": "./services/ai-operations-audit"
+    }
+  },
+  "aiImplementation": {
+    "title": "AI Implementation for Construction & Trades | 30-Day Rollout | Eliron",
+    "description": "We design and implement AI-augmented operational systems for SMBs and trades businesses. 80–90% reduction in admin work in 30 days. Starting at $2,500.",
+    "keywords": [
+      "AI implementation for construction",
+      "AI playbook rollout",
+      "AI project management",
+      "trades business automation"
+    ],
+    "alternates": {
+      "canonical": "./services/ai-implementation"
+    }
+  },
+  "constructionInfrastructure": {
+    "title": "Construction Project Management Consulting | EPC PMO | Eliron",
+    "description": "Project controls and PMO support for contractors, EPC firms, and developers. AI-augmented templates compress weekly admin from hours to minutes.",
+    "keywords": [
+      "construction project management consulting",
+      "EPC PMO support",
+      "infrastructure project controls",
+      "AI project management construction"
+    ],
+    "alternates": {
+      "canonical": "./industries/construction-infrastructure"
+    }
+  },
+  "tradesServices": {
+    "title": "AI Playbook for Trades & Services | HVAC & Plumbing | Eliron",
+    "description": "Affordable AI solutions for HVAC, plumbing, electrical, roofing, and property management. Start with our $97 Playbook or scale up with full implementation.",
+    "keywords": [
+      "AI playbook trades",
+      "HVAC business automation",
+      "plumbing scheduling AI",
+      "trades services operations"
+    ],
+    "alternates": {
+      "canonical": "./industries/trades-services"
+    }
+  },
+  "caseStudies": {
+    "title": "Eliron Case Studies | Proven Project & Program Outcomes",
+    "description": "Explore Eliron’s portfolio of case studies across energy, infrastructure, construction, and trades. See how our project management, program recovery, and AI-augmented delivery helped clients achieve measurable results.",
+    "keywords": [
+      "project management case studies",
+      "program recovery examples",
+      "energy project outcomes",
+      "construction PMO success",
+      "AI implementation case study"
+    ],
+    "alternates": {
+      "canonical": "./case-studies"
+    }
+  },
+  "energyUtilities": {
+    "title": "Project Management for Energy & Utilities | Houston | Eliron",
+    "description": "Capital project program management, owner's rep, and project controls for utilities, midstream operators, and renewable developers. Houston-based. Senior leadership, AI-augmented delivery.",
+    "keywords": [
+      "energy project management consulting",
+      "utility project management Houston",
+      "midstream project controls",
+      "renewable developer PMO",
+      "capital project oversight"
+    ],
+    "alternates": {
+      "canonical": "./industries/energy-utilities"
+    }
+  },
+  "playbook": {
+    "title": "Eliron AI Playbook | $97 Rollout Plan for Trades",
+    "description": "Our $97 AI Playbook gives SMB owners a 30-day rollout plan with 50+ prompts and 8 SOPs. Built for trades and field services. No consultant needed.",
+    "keywords": [
+      "AI playbook",
+      "trades AI rollout",
+      "SMB operations automation",
+      "HVAC AI playbook",
+      "plumbing AI implementation"
+    ],
+    "alternates": {
+      "canonical": "./playbook"
+    }
+  },
+  "pricing": {
+    "title": "Eliron Pricing | Transparent Service Costs",
+    "description": "Explore Eliron’s pricing for fractional PMO, program recovery audits, owner’s representative services, project staffing, and AI solutions. Clear, transparent costs designed for growth-stage companies, energy, construction, and trades.",
+    "keywords": [
+      "Eliron pricing",
+      "fractional PMO cost",
+      "program recovery audit pricing",
+      "owner’s rep fees",
+      "project staffing rates",
+      "AI playbook pricing"
+    ],
+    "alternates": {
+      "canonical": "./pricing"
+    }
   }
 }

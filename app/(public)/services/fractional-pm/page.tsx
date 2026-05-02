@@ -1,5 +1,9 @@
 import { Check } from "lucide-react";
 import Link from "next/link";
+import { Metadata } from "next";
+import metadataContent from "@/app/_assets/seo-meta-data.json";
+
+export const metadata: Metadata = metadataContent.fractionalPMO;
 
 export default function FractionalPmo() {
   return (

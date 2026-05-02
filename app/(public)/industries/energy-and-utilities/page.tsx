@@ -1,6 +1,10 @@
 import { cn } from "@/app/_utils/cn";
 import { MoveRight } from "lucide-react";
 import Link from "next/link";
+import { Metadata } from "next";
+import metadataContent from "@/app/_assets/seo-meta-data.json";
+
+export const metadata: Metadata = metadataContent.energyUtilities;
 
 export default function EnergyAndUtilities() {
   return (
