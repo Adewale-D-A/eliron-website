@@ -243,9 +243,9 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(232, 115, 26, 0.12);
-  border: 1px solid rgba(232, 115, 26, 0.25);
-  padding: 8px 16px;
+  /* background: rgba(232, 115, 26, 0.12);
+  border: 1px solid rgba(232, 115, 26, 0.25); */
+  /* padding: 8px 16px; */
   border-radius: 50px;
   font-size: 13px;
   font-weight: 600;
@@ -255,18 +255,18 @@
   letter-spacing: 0.5px;
 }
 
-.hero-badge::before {
+/* .hero-badge::before {
   content: "";
   width: 8px;
   height: 8px;
   background: var(--orange);
   border-radius: 50%;
   animation: pulse 2s ease infinite;
-}
+} */
 
 .hero h1 {
-  font-size: clamp(32px, 4vw, 50px);
-  font-weight: 700;
+  /* font-size: clamp(32px, 4vw, 50px);
+  font-weight: 700; */
   color: var(--white);
   line-height: 1.2;
   letter-spacing: -1.5px;
@@ -381,8 +381,8 @@
 }
 
 .problem-header {
-  text-align: center;
-  max-width: 700px;
+  /* text-align: left; */
+  /* max-width: 700px; */
   margin: 0 auto 60px;
 }
 
@@ -399,7 +399,7 @@
 .section-title {
   font-size: clamp(28px, 3.5vw, 42px);
   font-weight: 700;
-  color: var(--navy);
+  /* color: var(--navy); */
   line-height: 1.15;
   letter-spacing: -0.8px;
   margin-bottom: 16px;
@@ -502,7 +502,7 @@
 }
 
 .results .section-title {
-  color: var(--white);
+  /* color: var(--white); */
 }
 
 .results .section-sub {
@@ -747,7 +747,7 @@
            ============================================ */
 .serve {
   padding: var(--section-pad) 0;
-  background: var(--white);
+  /* background: var(--white); */
 }
 
 .serve-grid {
@@ -760,7 +760,7 @@
 .serve-card {
   border: 1px solid var(--gray-200);
   border-radius: 16px;
-  padding: 40px;
+  padding: 20px;
   transition: all 0.3s ease;
   position: relative;
 }
@@ -782,23 +782,23 @@
 
 .serve-card h3 {
   font-size: 22px;
-  font-weight: 700;
-  color: var(--navy);
-  margin-bottom: 8px;
+  /* font-weight: 700; */
+  /* color: var(--navy); */
+  /* margin-bottom: 8px; */
 }
 
 .serve-card .revenue-range {
-  font-size: 14px;
+  /* font-size: 14px; */
   color: var(--gray-400);
   margin-bottom: 16px;
   font-family: var(--font-mono);
 }
 
 .serve-card p {
-  font-size: 15px;
-  color: var(--gray-500);
+  /* font-size: 15px; */
+  /* color: var(--gray-500); */
   line-height: 1.7;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .serve-industries {
@@ -1013,7 +1013,7 @@
 }
 
 .proof .section-title {
-  color: var(--white);
+  /* color: var(--white); */
 }
 
 .proof-grid {
@@ -1201,7 +1201,7 @@
 }
 
 .footer-col h4 {
-  color: var(--white);
+  /* color: var(--white); */
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -1210,7 +1210,7 @@
 
 .footer-col a {
   display: block;
-  color: var(--gray-400);
+  /* color: var(--gray-400); */
   font-size: 14px;
   margin-bottom: 12px;
   transition: color 0.2s;

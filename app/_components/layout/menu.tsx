@@ -21,10 +21,10 @@ export default function NavMenu() {
     <>
       <nav
         className={cn(
-          "w-full flex justify-center fixed top-0 left-0 z-50 transition-all ",
-          scrolled || pathname !== "/"
-            ? " bg-[#0f1b33f7] backdrop-blur-md shadow-md"
-            : "",
+          "w-full flex justify-center fixed top-0 left-0 z-50 transition-all bg-white text-gray-800 ",
+          // scrolled || pathname !== "/"
+          //   ? " bg-[#0f1b33f7] backdrop-blur-md shadow-md"
+          //   : "",
         )}
       >
         <div className="flex w-full max-w-7xl justify-between items-center gap-4 px-5 lg:px-10 py-2">
@@ -36,7 +36,7 @@ export default function NavMenu() {
           >
             <Menu />
           </button>
-          <Logo />
+          <Logo variant="dark" />
           <div className="w-fit flex items-center gap-5 ">
             <div className=" hidden text-sm lg:flex items-center lg:gap-8 font-semibold">
               {menuItems.map((item) => (
@@ -44,7 +44,7 @@ export default function NavMenu() {
                   <Link
                     href={item.children ? "#" : item?.url}
                     className={cn(
-                      " hover:text-white text-gray-300 transition-all flex items-center gap-2",
+                      " hover:text-orange text-gray-600 transition-all flex items-center gap-2",
                       // pathname.includes(item?.url) && "text-primary",
                     )}
                   >
@@ -55,12 +55,12 @@ export default function NavMenu() {
                   </Link>
                   {item.children && (
                     <div className="w-40 hidden group-hover:block absolute top-0 pt-8 right-0 ">
-                      <div className="w-full bg-white rounded-lg flex flex-col gap-2 shadow shadow-orange">
+                      <div className="w-full bg-white rounded-lg flex flex-col shadow shadow-orange">
                         {item.children?.map((child) => (
                           <Link
                             href={child?.url}
                             key={child.id}
-                            className=" text-navy hover:bg-orange hover:text-white border-b border-gray-300 py-1 p-2 transition-all"
+                            className=" text-navy hover:bg-orange hover:text-white border-b border-gray-300 py-2 p-2 transition-all"
                           >
                             {child?.label}
                           </Link>

@@ -33,13 +33,13 @@ export default async function Contact({
               hello@elironco.com
             </span>
           </Link>
-          <CustomLink
+          {/* <CustomLink
             href="/assets/brochure.pdf"
             className="flex items-center gap-2.5"
             download
           >
             Download Brochure <Download className=" animate-bounce" />
-          </CustomLink>
+          </CustomLink> */}
         </div>
       </section>
       <section className="w-full flex flex-col gap-5  justify-center items-center">

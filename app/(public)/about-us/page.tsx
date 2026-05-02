@@ -19,7 +19,7 @@ export default function AboutUs() {
         <div className="w-full max-w-6xl px-5 lg:px-10">
           <div className="problem-header reveal">
             <div className="section-label">What We Fix</div>
-            <h2 className="section-title">
+            <h2 className="section-title text-navy">
               Your Admin Work Is Killing Your Margins
             </h2>
             <p className="section-sub">
@@ -99,7 +99,7 @@ export default function AboutUs() {
         <div className="w-full max-w-6xl px-5 lg:px-10">
           <div className="problem-header reveal">
             <div className="section-label">The Impact</div>
-            <h2 className="section-title">
+            <h2 className="section-title text-white">
               What Changes When You Implement AI
             </h2>
             <p className="section-sub text-gray-400">
@@ -164,7 +164,7 @@ export default function AboutUs() {
         <div className="w-full max-w-6xl px-5 lg:px-10">
           <div className="problem-header reveal">
             <div className="section-label text-orange">By The Numbers</div>
-            <h2 className="section-title">
+            <h2 className="section-title text-white">
               The Impact of AI on Construction & Trades Operations
             </h2>
           </div>

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ServicesLayout({
   children,
 }: {
@@ -7,7 +9,28 @@ export default function ServicesLayout({
     <div className="w-full">
       {children}
 
-      <section className="faq flex justify-center" id="faq">
+      <section className=" bg-white py-16 flex justify-center flex-col items-center w-full">
+        <div className=" w-full max-w-6xl my-5 px-5 lg:px-10">
+          <p className="hero-badge">Relevant Work</p>
+        </div>
+        <div className="w-full max-w-6xl px-5 py-16 lg:px-10 flex justify-between flex-col lg:flex-row gap-5 text-center lg:text-left items-center bg-orange/5 lg:rounded-2xl border border-orange">
+          <div className="text-gray-700 space-y-5">
+            <p className="hero-badge">Construction Tech</p>
+            <h2 className="font-bold text-4xl">Reporting time cut by 85%</h2>
+            <p className=" max-w-xl">
+              A $8M GC engaged Eliron for fractional PMO across six active
+              projects. PM reporting dropped from 6hrs to 45mins per project per
+              week.
+            </p>
+          </div>
+
+          <Link href="/case-studies" className="btn btn-primary btn-arrow">
+            Read full case study
+          </Link>
+        </div>
+      </section>
+
+      {/* <section className="faq flex justify-center" id="faq">
         <div className="w-full max-w-6xl px-5 lg:px-10">
           <div className="problem-header reveal">
             <div className="section-label">FAQ</div>
@@ -103,7 +126,7 @@ export default function ServicesLayout({
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

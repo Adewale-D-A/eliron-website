@@ -8,7 +8,7 @@ export default function Pricing() {
           <div className="section-label">
             Project Controls & Delivery Playbook
           </div>
-          <h2 className="section-title">How We Work With You</h2>
+          <h2 className="section-title text-navy">How We Work With You</h2>
         </div>
         <div className="services-grid">
           <div className="service-card flex flex-col justify-between reveal">

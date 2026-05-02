@@ -4,9 +4,9 @@ export default function AiPlaybook() {
   return (
     <section className="playbook flex justify-center" id="playbook">
       <div className="w-full max-w-6xl px-5 lg:px-10">
-        <div className="problem-header reveal">
+        <div className="problem-header reveal mt-10">
           <div className="section-label">The Playbook</div>
-          <h2 className="section-title">
+          <h2 className="section-title text-navy">
             The AI Playbook for Construction & Trades
           </h2>
           <p className="section-sub">

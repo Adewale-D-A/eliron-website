@@ -13,9 +13,9 @@ export default function PublicLayout({
       {children}
       {/* footer  */}
       <FooterMenu />
-      <div className=" fixed bottom-10 right-16 z-50">
+      {/* <div className=" fixed bottom-10 right-16 z-50">
         <ThemeModeToggle />
-      </div>
+      </div> */}
     </main>
   );
 }
